@@ -1,0 +1,7 @@
+fp-*
+*backups
+*.bak
+
+\#auto_saved_files#
+
+*.lck

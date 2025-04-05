@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TPS63802")(type "KiCad")(uri "${KIPRJMOD}/PARTS/ul_TPS63802DLAR/KiCADv6/2025-04-02_19-31-14.kicad_sym")(options "")(descr ""))
+  (lib (name "BQ24073")(type "KiCad")(uri "${KIPRJMOD}/PARTS/ul_BQ24073RGTR/KiCADv6/2025-04-03_19-39-18.kicad_sym")(options "")(descr ""))
+  (lib (name "stm32g031g8ux")(type "KiCad")(uri "${KIPRJMOD}/PARTS/STM32G031G8Ux/stm32g031g8ux.kicad_sym")(options "")(descr ""))
+  (lib (name "TPD1E10B06DPYR")(type "KiCad")(uri "${KIPRJMOD}/PARTS/ul_TPD1E10B06DPYR/KiCADv6/TPD1E10B06DPYR.kicad_sym")(options "")(descr ""))
+)
