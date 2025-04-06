@@ -217,6 +217,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2682,6 +2789,12 @@
 		(uuid "99c6f11d-4fb9-453e-a610-e7bb7214355a")
 	)
 	(junction
+		(at 81.28 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a16dc505-ce53-43a1-898a-39534d67140c")
+	)
+	(junction
 		(at 134.62 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3019,7 +3132,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 144.78) (xy 92.71 144.78)
+			(xy 81.28 144.78) (xy 92.71 144.78)
 		)
 		(stroke
 			(width 0)
@@ -3079,7 +3192,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 130.81) (xy 77.47 144.78)
+			(xy 71.12 130.81) (xy 71.12 144.78)
 		)
 		(stroke
 			(width 0)
@@ -3126,16 +3239,6 @@
 			(type default)
 		)
 		(uuid "b0d2b806-a0fe-4e43-b6f4-4a21b14c87b5")
-	)
-	(wire
-		(pts
-			(xy 77.47 144.78) (xy 78.74 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0e11c2e-d926-4feb-8c35-01e15beaa881")
 	)
 	(wire
 		(pts
@@ -3296,6 +3399,16 @@
 			(type default)
 		)
 		(uuid "fda6a7a2-bef6-4c02-a9cd-0caa0070b024")
+	)
+	(label "SWITCH"
+		(at 81.28 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e87b849b-784e-42e0-8e30-11fafd4bb989")
 	)
 	(global_label "EN_LOAD_BATT"
 		(shape input)
@@ -3961,6 +4074,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 81.28 144.78 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ce208d9-fd07-4e4e-b9ce-7b38f6420bc4")
+		(property "Reference" "TP11"
+			(at 83.82 146.8119 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 83.82 149.3519 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 76.2 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 81.28 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "660b17e5-4905-496e-885c-f4e0a57b9e19")
+		)
+		(instances
+			(project "DRP.004"
+				(path "/990f0ec4-1b5b-4db8-8f39-ecd88fffeea0/6cce2e90-e51c-4942-a042-f4f9f078d271/72eb472c-a375-4523-9048-0cd870109a09"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 119.38 91.44 0)
 		(mirror y)
@@ -4436,7 +4616,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 77.47 130.81 0)
+		(at 71.12 130.81 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4445,7 +4625,7 @@
 		(dnp no)
 		(uuid "6999cc7c-4752-4c99-b40d-1d3a916d7ef3")
 		(property "Reference" "#PWR038"
-			(at 77.47 134.62 0)
+			(at 71.12 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4454,7 +4634,7 @@
 			)
 		)
 		(property "Value" "VSYS"
-			(at 74.93 126.238 0)
+			(at 68.58 126.238 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4463,7 +4643,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 130.81 0)
+			(at 71.12 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4472,7 +4652,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 130.81 0)
+			(at 71.12 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4481,7 +4661,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 77.47 130.81 0)
+			(at 71.12 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5872,7 +6052,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 83.82 144.78 0)
+		(at 76.2 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5881,7 +6061,7 @@
 		(fields_autoplaced yes)
 		(uuid "cbda9964-9a04-4b9c-9423-9c1f005a2e8e")
 		(property "Reference" "SW2"
-			(at 83.82 137.16 0)
+			(at 76.2 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5889,7 +6069,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 83.82 139.7 0)
+			(at 76.2 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5897,7 +6077,7 @@
 			)
 		)
 		(property "Footprint" "SWITCHES:SW_SPST_PTS645"
-			(at 83.82 139.7 0)
+			(at 76.2 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5906,7 +6086,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 83.82 139.7 0)
+			(at 76.2 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5915,7 +6095,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 83.82 144.78 0)
+			(at 76.2 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5924,7 +6104,7 @@
 			)
 		)
 		(property "LCSC" "C2837531"
-			(at 83.82 144.78 0)
+			(at 76.2 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5933,7 +6113,7 @@
 			)
 		)
 		(property "lcsc" ""
-			(at 83.82 144.78 0)
+			(at 76.2 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)

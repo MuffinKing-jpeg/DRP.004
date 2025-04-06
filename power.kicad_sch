@@ -656,6 +656,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:USB_C_Receptacle_PowerOnly_6P"
 			(pin_names
 				(offset 1.016)
@@ -3094,6 +3201,12 @@
 		(uuid "1561b2a6-56fc-4ce1-b802-00b25dadda2e")
 	)
 	(junction
+		(at 121.92 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1adcdc11-9485-4672-a9a4-0e8c08cc787f")
+	)
+	(junction
 		(at 40.64 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3337,7 +3450,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 114.3) (xy 116.84 114.3)
+			(xy 134.62 114.3) (xy 121.92 114.3)
 		)
 		(stroke
 			(width 0)
@@ -4037,7 +4150,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 110.49) (xy 127 114.3)
+			(xy 134.62 109.22) (xy 134.62 114.3)
 		)
 		(stroke
 			(width 0)
@@ -4204,6 +4317,16 @@
 			(type default)
 		)
 		(uuid "ee3d3e02-ce44-4a12-a91d-f03382909c9e")
+	)
+	(wire
+		(pts
+			(xy 121.92 114.3) (xy 116.84 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee3fcb35-e0e2-405d-9d98-3862ba181ba3")
 	)
 	(wire
 		(pts
@@ -4820,7 +4943,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 127 110.49 0)
+		(at 134.62 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4829,7 +4952,7 @@
 		(fields_autoplaced yes)
 		(uuid "1bab738a-a91b-4afc-bd3b-f928ab3b590a")
 		(property "Reference" "#PWR021"
-			(at 127 114.3 0)
+			(at 134.62 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4838,7 +4961,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 127 105.41 0)
+			(at 134.62 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4846,7 +4969,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 110.49 0)
+			(at 134.62 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4855,7 +4978,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 110.49 0)
+			(at 134.62 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4864,7 +4987,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 127 110.49 0)
+			(at 134.62 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6534,6 +6657,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 250.19 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a297f5da-2b95-46a5-8f17-644ba750c3e6")
+		(property "Reference" "TP2"
+			(at 252.73 48.7679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 252.73 51.3079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 255.27 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 255.27 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 250.19 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98c29b18-17fa-4ce0-9045-d5db92ed9f24")
+		)
+		(instances
+			(project "DRP.004"
+				(path "/990f0ec4-1b5b-4db8-8f39-ecd88fffeea0/6cce2e90-e51c-4942-a042-f4f9f078d271"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 149.86 80.01 0)
 		(mirror y)
@@ -6662,6 +6852,73 @@
 			(project "DRP.004"
 				(path "/990f0ec4-1b5b-4db8-8f39-ecd88fffeea0/6cce2e90-e51c-4942-a042-f4f9f078d271"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 121.92 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac39c624-cd57-4370-bd39-443418e11339")
+		(property "Reference" "TP3"
+			(at 124.46 109.7279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 124.46 112.2679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 127 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 121.92 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5dd83634-3b85-44ea-8933-6f42e78140ce")
+		)
+		(instances
+			(project "DRP.004"
+				(path "/990f0ec4-1b5b-4db8-8f39-ecd88fffeea0/6cce2e90-e51c-4942-a042-f4f9f078d271"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -7671,6 +7928,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 163.83 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e11ac8ac-8bfc-44d8-822d-0d9d06534c02")
+		(property "Reference" "TP1"
+			(at 166.37 48.7679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 166.37 51.3079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 168.91 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 163.83 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "31d7c362-732f-4c5a-a6a1-cecdf9ac79ea")
+		)
+		(instances
+			(project ""
+				(path "/990f0ec4-1b5b-4db8-8f39-ecd88fffeea0/6cce2e90-e51c-4942-a042-f4f9f078d271"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
 		(at 207.01 34.29 90)
 		(unit 1)
@@ -8400,7 +8724,7 @@
 		)
 	)
 	(sheet
-		(at 183.515 112.395)
+		(at 212.725 111.125)
 		(size 56.515 34.29)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8416,7 +8740,7 @@
 		)
 		(uuid "72eb472c-a375-4523-9048-0cd870109a09")
 		(property "Sheetname" "power_control"
-			(at 183.515 111.6834 0)
+			(at 212.725 110.4134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8425,7 +8749,7 @@
 			)
 		)
 		(property "Sheetfile" "power_control.kicad_sch"
-			(at 183.515 147.2696 0)
+			(at 212.725 145.9996 0)
 			(effects
 				(font
 					(size 1.27 1.27)
