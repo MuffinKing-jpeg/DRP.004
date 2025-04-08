@@ -5,3 +5,7 @@ fp-*
 \#auto_saved_files#
 
 *.lck
+
+PLOTS/**/*
+
+_autosave-*
