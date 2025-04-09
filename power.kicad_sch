@@ -3177,12 +3177,6 @@
 		(uuid "0cb95736-af06-4ff0-ab8a-3c35637958bd")
 	)
 	(junction
-		(at 273.05 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1304753b-722e-4645-9020-f0b3dc873482")
-	)
-	(junction
 		(at 59.69 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3235,12 +3229,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6c9e53f2-2391-4417-9e39-1624a02d58d6")
-	)
-	(junction
-		(at 273.05 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "74e9778b-0991-4960-ac0e-139762179a02")
 	)
 	(junction
 		(at 121.92 40.64)
@@ -3860,16 +3848,6 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 63.5) (xy 273.05 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cc7ef17-8e10-4a17-b970-bc3f2aeaccea")
-	)
-	(wire
-		(pts
 			(xy 72.39 120.65) (xy 72.39 121.92)
 		)
 		(stroke
@@ -4047,16 +4025,6 @@
 			(type default)
 		)
 		(uuid "b5ce0d00-a963-4948-b83e-b4743e7d89e1")
-	)
-	(wire
-		(pts
-			(xy 273.05 55.88) (xy 273.05 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b780f90f-4c15-45ec-b828-1be1c1b7bbfa")
 	)
 	(wire
 		(pts
@@ -6572,85 +6540,6 @@
 			(project "DRP.004"
 				(path "/990f0ec4-1b5b-4db8-8f39-ecd88fffeea0/6cce2e90-e51c-4942-a042-f4f9f078d271"
 					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 273.05 59.69 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "9a753f01-a546-455d-b9a0-93e374243959")
-		(property "Reference" "C5"
-			(at 276.86 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "22uF"
-			(at 276.86 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 272.0848 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 273.05 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 273.05 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "lcsc" ""
-			(at 273.05 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a4380dfd-47c4-44d8-8841-16f5b3b2d58d")
-		)
-		(pin "1"
-			(uuid "12142d5c-3991-452a-ab64-91e216a7ec34")
-		)
-		(instances
-			(project "DRP.004"
-				(path "/990f0ec4-1b5b-4db8-8f39-ecd88fffeea0/6cce2e90-e51c-4942-a042-f4f9f078d271"
-					(reference "C5")
 					(unit 1)
 				)
 			)
