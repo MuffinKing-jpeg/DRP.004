@@ -3,5 +3,6 @@ fp-*
 *.bak
 
 \#auto_saved_files#
+_autosave*
 
 *.lck
