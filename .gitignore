@@ -1,4 +1,3 @@
-fp-*
 *backups
 *.bak
 
@@ -6,3 +5,7 @@ fp-*
 _autosave*
 
 *.lck
+
+PLOTS/**/*
+
+_autosave-*
