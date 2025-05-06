@@ -1,0 +1,11 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "TPS63802")(type "KiCad")(uri "${KIPRJMOD}/PARTS/ul_TPS63802DLAR/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "SOT-523")(type "KiCad")(uri "${KIPRJMOD}/PARTS/SOT-523")(options "")(descr ""))
+  (lib (name "BQ24703")(type "KiCad")(uri "${KIPRJMOD}/PARTS/ul_BQ24073RGTR/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "STM32G031G8Ux")(type "KiCad")(uri "${KIPRJMOD}/PARTS/STM32G031G8Ux")(options "")(descr ""))
+  (lib (name "conn")(type "KiCad")(uri "${KIPRJMOD}/PARTS/CUSTOM_connectors.pretty")(options "")(descr ""))
+  (lib (name "SWITCHES")(type "KiCad")(uri "${KIPRJMOD}/PARTS/SWITCHES.pretty")(options "")(descr ""))
+  (lib (name "TPD1E10B06DPYR")(type "KiCad")(uri "${KIPRJMOD}/PARTS/ul_TPD1E10B06DPYR/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "DUCK")(type "KiCad")(uri "${KIPRJMOD}/PARTS/DUCK")(options "")(descr ""))
+)
