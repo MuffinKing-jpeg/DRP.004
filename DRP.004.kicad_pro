@@ -500,7 +500,7 @@
         "microvia_drill": 0.1,
         "name": "ANALOG",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgb(0, 0, 255)",
         "track_width": 0.2,
         "via_diameter": 0.5,
@@ -517,7 +517,7 @@
         "microvia_drill": 0.1,
         "name": "BAT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgb(0, 255, 0)",
         "track_width": 0.2,
         "via_diameter": 0.5,
@@ -534,7 +534,7 @@
         "microvia_drill": 0.1,
         "name": "DATA",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgb(0, 132, 132)",
         "track_width": 0.2,
         "via_diameter": 0.5,
@@ -551,12 +551,26 @@
         "microvia_drill": 0.1,
         "name": "DEBUG",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgb(255, 0, 255)",
         "track_width": 0.2,
         "via_diameter": 0.5,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.3,
+        "diff_pair_gap": 0.254,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "FIDUCIAL",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.5,
+        "via_drill": 0.3
       },
       {
         "bus_width": 12,
@@ -568,7 +582,7 @@
         "microvia_drill": 0.1,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgb(72, 72, 72)",
         "track_width": 0.25,
         "via_diameter": 0.5,
@@ -585,7 +599,7 @@
         "microvia_drill": 0.1,
         "name": "POWER",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 6,
         "schematic_color": "rgb(255, 99, 2)",
         "track_width": 0.25,
         "via_diameter": 0.5,
@@ -602,7 +616,7 @@
         "microvia_drill": 0.1,
         "name": "PWM",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
+        "priority": 7,
         "schematic_color": "rgb(255, 0, 0)",
         "track_width": 0.225,
         "via_diameter": 0.5,
@@ -655,7 +669,12 @@
         "POWER"
       ]
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "FIDUCIAL",
+        "pattern": "<no net>"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
