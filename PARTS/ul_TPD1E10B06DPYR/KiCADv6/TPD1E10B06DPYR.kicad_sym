@@ -232,7 +232,7 @@
 			)
 		)
 		(symbol "TPD1E10B06DPYR_1_1"
-			(pin unspecified line
+			(pin passive line
 				(at 10.16 0 0)
 				(length 1.905)
 				(name ""
@@ -250,7 +250,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 19.05 0 180)
 				(length 1.905)
 				(name ""
