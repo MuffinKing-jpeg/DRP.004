@@ -382,7 +382,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin power_out line
 				(at 45.72 -38.1 180)
 				(length 7.62)
 				(name "BAT"
@@ -400,7 +400,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin power_out line
 				(at 45.72 -40.64 180)
 				(length 7.62)
 				(name "BAT"

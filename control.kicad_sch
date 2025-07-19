@@ -6579,7 +6579,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ec80e762-7ca6-45f9-8890-508863069363")
 		(property "Reference" "TP6"
