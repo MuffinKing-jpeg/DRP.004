@@ -1,0 +1,3 @@
+[submodule "PARTS"]
+	path = PARTS
+	url = https://github.com/MuffinKing-jpeg/KiCAD-Parts.git
