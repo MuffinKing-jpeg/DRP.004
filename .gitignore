@@ -4,6 +4,7 @@
 \#auto_saved_files#
 _autosave*
 
+*models.txt
 *.lck
 
 PLOTS/**/*

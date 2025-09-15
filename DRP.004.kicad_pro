@@ -457,6 +457,7 @@
       "single_global_label": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -464,7 +465,14 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "Muffin_LDO",
+      "Muffin_PMIC",
+      "Muffin_DIODES",
+      "Muffin_DC-DC",
+      "Muffin_MCU",
+      "Muffin_CONNECTORS"
+    ]
   },
   "meta": {
     "filename": "DRP.004.kicad_pro",
@@ -629,7 +637,13 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "+1V8": [
+        "POWER"
+      ],
       "+3V3": [
+        "POWER"
+      ],
+      "+5V5": [
         "POWER"
       ],
       "+BATT": [
@@ -646,6 +660,9 @@
       ],
       "NRST": [
         "DEBUG"
+      ],
+      "SERVO_PWM": [
+        "PWM"
       ],
       "SERWO_PWM": [
         "PWM"
@@ -861,10 +878,6 @@
     [
       "6cce2e90-e51c-4942-a042-f4f9f078d271",
       "power"
-    ],
-    [
-      "72eb472c-a375-4523-9048-0cd870109a09",
-      "power_control"
     ],
     [
       "9a8ba87a-c59f-4592-a0ef-e35d3bfde58d",
