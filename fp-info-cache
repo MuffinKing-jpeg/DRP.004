@@ -1,4 +1,4 @@
-46703014175397935
+46704772231578969
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -71683,6 +71683,13 @@ Muffin_CONNECTOR_THT
 Connector_JST_1x03_P1.27mm
 Through hole straight pin header, 1x03, 1.27mm pitch, single row
 Through hole pin header THT 1x03 1.27mm single row
+0
+3
+3
+Muffin_CONNECTOR_THT
+PinHeader_1x03_P2.54mm_Horizontal
+Through hole angled pin header, 1x03, 2.54mm pitch, 6mm pin length, single row
+Through hole angled pin header THT 1x03 2.54mm single row
 0
 3
 3
