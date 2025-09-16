@@ -7370,7 +7370,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "54f34e12-4f6b-41c0-b2db-f87ded99022f")
 		(property "Reference" "J6"
 			(at 56.515 144.78 0)
@@ -7388,13 +7387,12 @@
 				)
 			)
 		)
-		(property "Footprint" "conn:PinHeader_1x03_P1.27mm_Vertical"
-			(at 55.88 152.4 0)
+		(property "Footprint" "Muffin_CONNECTOR_THT:Connector_JST_1x03_P1.27mm"
+			(at 56.896 163.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
