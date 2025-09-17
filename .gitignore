@@ -6,6 +6,7 @@ _autosave*
 
 *models.txt
 *.lck
+fp-info-cache
 
 PLOTS/**/*
 
