@@ -2452,24 +2452,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 17.78 12.7 180)
-					(length 5.08)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at 17.78 -7.62 180)
 					(length 5.08)
@@ -2508,6 +2490,24 @@
 				)
 			)
 			(symbol "TPS61022RWUR_1_1"
+				(pin passive line
+					(at 17.78 12.7 180)
+					(length 5.08)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_out line
 					(at 17.78 5.08 180)
 					(length 5.08)
@@ -4073,12 +4073,6 @@
 		(uuid "26ebeb9b-c0d0-4e77-8543-4a07469b06c5")
 	)
 	(junction
-		(at 207.01 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f5bba37-9217-48d1-8430-70ce97c30702")
-	)
-	(junction
 		(at 212.09 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4936,16 +4930,6 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 59.69) (xy 207.01 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d63f371-3c6b-4d94-b004-2e5d0eaac52f")
-	)
-	(wire
-		(pts
 			(xy 69.85 120.65) (xy 69.85 124.46)
 		)
 		(stroke
@@ -5306,7 +5290,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 60.96) (xy 207.01 60.96)
+			(xy 201.93 60.96) (xy 212.09 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5403,16 +5387,6 @@
 			(type default)
 		)
 		(uuid "ee3fcb35-e0e2-405d-9d98-3862ba181ba3")
-	)
-	(wire
-		(pts
-			(xy 207.01 60.96) (xy 212.09 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee6ba3c0-589f-45a7-a4e2-cb7260d76fba")
 	)
 	(wire
 		(pts
