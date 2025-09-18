@@ -9,5 +9,6 @@ _autosave*
 fp-info-cache
 
 PLOTS/**/*
+!PLOTS/Assembly/
 
 _autosave-*
