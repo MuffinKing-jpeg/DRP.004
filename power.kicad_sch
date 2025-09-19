@@ -2331,6 +2331,15 @@
 					(hide yes)
 				)
 			)
+			(property "LCSC" "C915088"
+				(at -0.762 -14.224 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "TPS61022RWUR"
 				(at 0 0 0)
 				(effects
@@ -6281,7 +6290,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C915088"
 			(at 175.26 71.12 0)
 			(effects
 				(font
