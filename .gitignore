@@ -4,8 +4,11 @@
 \#auto_saved_files#
 _autosave*
 
+*models.txt
 *.lck
+fp-info-cache
 
 PLOTS/**/*
+!PLOTS/Assembly/
 
 _autosave-*
