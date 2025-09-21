@@ -710,7 +710,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "PLOTS",
+      "plot": "PLOTS/Assembly/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
