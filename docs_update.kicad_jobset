@@ -507,18 +507,6 @@
         "record_output": true
       },
       "type": "special_execute"
-    },
-    {
-      "description": "GIT",
-      "id": "a35e4cb4-8868-4b01-810f-83b515e54df0",
-      "settings": {
-        "command": "git add .\ngit commit -m \"Updated production data\"\ngit push",
-        "description": "",
-        "ignore_exit_code": true,
-        "output_filename": "git.log",
-        "record_output": true
-      },
-      "type": "special_execute"
     }
   ],
   "meta": {
@@ -589,17 +577,6 @@
       ],
       "settings": {
         "output_path": "/home/andrii/Project/DRP.004/Docs/"
-      },
-      "type": "folder"
-    },
-    {
-      "description": "GIT PUSH",
-      "id": "559b4164-f096-4d17-87ee-3cda8fe95b56",
-      "only": [
-        "a35e4cb4-8868-4b01-810f-83b515e54df0"
-      ],
-      "settings": {
-        "output_path": "Logs"
       },
       "type": "folder"
     }

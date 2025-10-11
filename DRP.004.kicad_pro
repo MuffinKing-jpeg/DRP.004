@@ -713,7 +713,7 @@
       "plot": "PLOTS/Assembly/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "DRP.004.step",
       "svg": "",
       "vrml": ""
     },
