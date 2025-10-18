@@ -4558,6 +4558,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 95.25) (xy 163.83 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79c384f5-16ab-494e-bf13-44f56fe1ba5c")
+	)
+	(wire
+		(pts
 			(xy 147.32 143.51) (xy 151.13 143.51)
 		)
 		(stroke
@@ -4828,6 +4838,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 85.09) (xy 163.83 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9718ff2-e453-4b9a-8648-f8617768d9f8")
+	)
+	(wire
+		(pts
 			(xy 218.44 121.92) (xy 218.44 123.19)
 		)
 		(stroke
@@ -5070,7 +5090,7 @@
 	)
 	(global_label "USART_TX"
 		(shape input)
-		(at 163.83 85.09 0)
+		(at 167.64 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5080,7 +5100,7 @@
 		)
 		(uuid "25eea695-cc66-4b91-803f-95749e4bba41")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 175.8261 85.09 0)
+			(at 179.6361 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5090,7 +5110,7 @@
 			)
 		)
 		(property "Netclass" "DATA"
-			(at 163.83 87.2808 0)
+			(at 167.64 87.2808 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5424,7 +5444,7 @@
 	)
 	(global_label "USART_RX"
 		(shape output)
-		(at 163.83 95.25 0)
+		(at 167.64 95.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5434,7 +5454,7 @@
 		)
 		(uuid "69864595-c8b5-4ffe-a54e-5ff95bfca791")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 176.1285 95.25 0)
+			(at 179.9385 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5444,7 +5464,7 @@
 			)
 		)
 		(property "Netclass" "DATA"
-			(at 163.83 97.4408 0)
+			(at 167.64 97.4408 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8035,14 +8055,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "lcsc" ""
-			(at 209.55 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "Tolerance " ""

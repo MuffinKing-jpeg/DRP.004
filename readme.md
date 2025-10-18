@@ -6,6 +6,7 @@ Quack with the **new level**!
 
 ## Docs
 
+- [Interactive BOM](./Docs/ibom.html)
 - [Schematics](./Docs/DRP.004.pdf)
 - [Production files](./production/)
 
