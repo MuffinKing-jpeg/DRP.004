@@ -47,6 +47,7 @@
         "rotation_y": 0.0,
         "rotation_z": 0.0,
         "side": "top",
+        "use_board_stackup_colors": true,
         "width": 1920,
         "zoom": 1.4
       },
@@ -99,6 +100,7 @@
         "rotation_y": 0.0,
         "rotation_z": 0.0,
         "side": "bottom",
+        "use_board_stackup_colors": true,
         "width": 1920,
         "zoom": 1.4
       },
@@ -151,6 +153,7 @@
         "rotation_y": 20.0,
         "rotation_z": 15.0,
         "side": "top",
+        "use_board_stackup_colors": true,
         "width": 1920,
         "zoom": 1.35
       },
@@ -500,9 +503,9 @@
       "description": "Generate Ibom",
       "id": "446bae5b-3870-422c-a79a-05e2ebbd515d",
       "settings": {
-        "command": "generate_interactive_bom --dark-mode --show-fabrication  --highlight-pin1 selected --checkboxes Placed --bom-view left-right --layer-view F --dest-dir Docs --name-format ibom --blacklist TP* --no-browser ${KIPRJMOD}/DRP.004.kicad_pcb\n",
+        "command": "generate_interactive_bom --dark-mode --show-fabrication  --highlight-pin1 selected --checkboxes Placed --bom-view left-right --layer-view F --dest-dir Docs --name-format ibom --blacklist TP* --no-browser \"${KIPRJMOD}/DRP.004.kicad_pcb\"",
         "description": "",
-        "ignore_exit_code": true,
+        "ignore_exit_code": false,
         "output_filename": "446bae5b-3870-422c-a79a-05e2ebbd515d.log",
         "record_output": true
       },
@@ -573,7 +576,8 @@
         "081b8277-230b-4685-8dac-f8af26c27f9e",
         "853f33fb-b667-4038-aec3-0e764ecf02fd",
         "e5125c40-9639-4e7a-82a5-414d2e97dc4b",
-        "4bdd457a-9aa0-4482-8c59-096b0b1ebc2e"
+        "4bdd457a-9aa0-4482-8c59-096b0b1ebc2e",
+        "446bae5b-3870-422c-a79a-05e2ebbd515d"
       ],
       "settings": {
         "output_path": "/home/andrii/Project/DRP.004/Docs/"
