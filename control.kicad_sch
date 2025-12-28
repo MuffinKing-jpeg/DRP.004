@@ -6483,7 +6483,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "1nF"
 			(at 39.37 177.7999 0)
 			(effects
 				(font
@@ -6570,7 +6570,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1.1k"
 			(at 223.266 115.57 90)
 			(effects
 				(font
@@ -7730,7 +7730,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "5384e484-b0f4-4b20-8f3b-0cc46ccdc245")
 		(property "Reference" "J5"
 			(at 141.605 64.77 0)
@@ -8931,7 +8930,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1.1k"
 			(at 223.266 92.71 90)
 			(effects
 				(font
@@ -9328,7 +9327,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10nF"
+		(property "Value" "1nF"
 			(at 123.19 179.0699 0)
 			(effects
 				(font
@@ -10052,7 +10051,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "1.1k"
 			(at 223.266 104.14 90)
 			(effects
 				(font
@@ -10432,7 +10431,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx58-2LFS"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP7C"
 			(at 204.47 53.34 0)
 			(effects
 				(font
@@ -11024,7 +11023,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D4.0mm"
 			(at 184.15 67.31 0)
 			(effects
 				(font
