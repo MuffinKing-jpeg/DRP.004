@@ -5618,23 +5618,6 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc" ""
-			(at 31.75 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
-			(at 31.75 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "d5534e6e-7d00-4266-ac23-c31d25e124d7")
 		)
@@ -5762,23 +5745,6 @@
 			)
 		)
 		(property "Description" "USB Power-Only 6P Type-C Receptacle connector"
-			(at 40.64 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "lcsc" ""
-			(at 40.64 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
 			(at 40.64 128.27 0)
 			(effects
 				(font
@@ -5939,15 +5905,6 @@
 			)
 		)
 		(property "LCSC" "C915088"
-			(at 175.26 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 175.26 71.12 0)
 			(effects
 				(font
@@ -6175,23 +6132,6 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc" ""
-			(at 138.43 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
-			(at 138.43 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "ebccc70a-9704-45d7-b9ad-e09730e01755")
 		)
@@ -6330,23 +6270,6 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc" ""
-			(at 233.68 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
-			(at 233.68 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "d0a6edc4-ed0b-422d-a88b-b5a3a73e2aee")
 		)
@@ -6410,23 +6333,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 222.25 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "lcsc" ""
-			(at 222.25 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
 			(at 222.25 71.12 0)
 			(effects
 				(font
@@ -6770,23 +6676,6 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc" ""
-			(at 140.97 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
-			(at 140.97 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "9d66e24c-da71-42ab-be48-3495b06f59f1")
 		)
@@ -6849,15 +6738,6 @@
 			)
 		)
 		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
-			(at 46.99 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 46.99 73.66 0)
 			(effects
 				(font
@@ -7070,23 +6950,6 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc" ""
-			(at 121.92 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
-			(at 121.92 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "4769725c-2d0b-4b20-8b1d-d3817528ca7c")
 		)
@@ -7165,15 +7028,6 @@
 				)
 			)
 		)
-		(property "Tolerance " ""
-			(at 212.09 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "7f2516c2-a627-4947-82d9-6627f291429b")
 		)
@@ -7245,15 +7099,6 @@
 			)
 		)
 		(property "LCSC" "C15220"
-			(at 59.69 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 59.69 35.56 0)
 			(effects
 				(font
@@ -7369,15 +7214,6 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 171.45 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 171.45 123.19 0)
 			(effects
 				(font
@@ -7587,23 +7423,6 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc" ""
-			(at 171.45 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
-			(at 171.45 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "13f16ece-42ca-4d58-b661-36631beb5843")
 		)
@@ -7684,15 +7503,6 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance " ""
-			(at 243.84 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "f97cf612-7fae-4e78-9846-3fb706b2c162")
 		)
@@ -7752,23 +7562,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 265.43 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "lcsc" ""
-			(at 265.43 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
 			(at 265.43 66.04 0)
 			(effects
 				(font
@@ -7982,23 +7775,6 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc" ""
-			(at 107.95 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
-			(at 107.95 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "71ff6eb4-db2c-4abd-bd78-ba5b1a120760")
 		)
@@ -8139,15 +7915,6 @@
 		)
 		(property "LCSC" "C48260"
 			(at 251.46 68.072 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
-			(at 257.81 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8356,23 +8123,6 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc" ""
-			(at 154.94 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
-			(at 154.94 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "7cede93f-1a46-432e-b6e2-f9d1ef2f3391")
 		)
@@ -8434,23 +8184,6 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 251.46 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "lcsc" ""
-			(at 251.46 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
 			(at 251.46 77.47 0)
 			(effects
 				(font
@@ -8524,15 +8257,6 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 106.68 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 106.68 118.11 0)
 			(effects
 				(font
@@ -9016,15 +8740,6 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance " ""
-			(at 161.29 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "3"
 			(uuid "c14294d5-7584-468b-b6f1-3741463c8ee7")
 		)
@@ -9248,15 +8963,6 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance " ""
-			(at 50.8 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "feb45c64-1f0e-440f-9828-8d2a08c93acf")
 		)
@@ -9318,23 +9024,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 60.96 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "lcsc" ""
-			(at 60.96 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
 			(at 60.96 139.7 0)
 			(effects
 				(font
@@ -9405,23 +9094,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 24.13 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "lcsc" ""
-			(at 24.13 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
 			(at 24.13 63.5 0)
 			(effects
 				(font
@@ -9635,23 +9307,6 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc" ""
-			(at 114.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
-			(at 114.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "e62e47ab-8f5d-4402-aa08-ba12a5f73cc8")
 		)
@@ -9789,23 +9444,6 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc" ""
-			(at 259.08 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
-			(at 259.08 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "09d65aa1-0679-4f4d-8e68-0a50a2c84c7a")
 		)
@@ -9879,23 +9517,6 @@
 			)
 		)
 		(property "LCSC" "C2828442"
-			(at 261.62 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "lcsc" ""
-			(at 261.62 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
 			(at 261.62 132.08 0)
 			(effects
 				(font
@@ -9984,15 +9605,6 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance " ""
-			(at 173.99 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "e20b8a0b-963e-4460-96a9-d9386345cd1d")
 		)
@@ -10054,23 +9666,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 71.12 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "lcsc" ""
-			(at 71.12 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
 			(at 71.12 139.7 0)
 			(effects
 				(font
@@ -10283,29 +9878,12 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc" ""
-			(at 201.93 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "coef" "C0G"
 			(at 207.772 74.676 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Tolerance " ""
-			(at 201.93 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10378,29 +9956,12 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc" ""
-			(at 212.09 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Tolerance" "1%"
 			(at 215.9 86.614 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Tolerance " ""
-			(at 212.09 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10598,23 +10159,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 39.37 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "lcsc" ""
-			(at 39.37 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance " ""
 			(at 39.37 63.5 0)
 			(effects
 				(font
