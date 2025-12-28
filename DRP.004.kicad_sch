@@ -4076,15 +4076,6 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance " ""
-			(at 162.56 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "DRP.004"
 				(path "/990f0ec4-1b5b-4db8-8f39-ecd88fffeea0"
@@ -4141,15 +4132,6 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 162.56 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 162.56 193.04 0)
 			(effects
 				(font
@@ -4278,15 +4260,6 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 162.56 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance " ""
 			(at 162.56 180.34 0)
 			(effects
 				(font

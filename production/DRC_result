@@ -1,7 +1,11 @@
 ** Drc report for DRP.004.kicad_pcb **
-** Created on 2025-12-28T02:09:21+0200 **
+** Created on 2025-12-28T23:24:40+0200 **
 
-** Found 0 DRC violations **
+** Found 1 DRC violations **
+[zones_intersect]: Copper zones intersect (intersecting zones must have distinct priorities)
+    Local override; error
+    @(189.1110 mm, 83.8750 mm): Teardrop [GND] on F.Cu
+    @(190.4750 mm, 84.5500 mm): Teardrop [GND] on F.Cu
 
 ** Found 0 unconnected pads **
 

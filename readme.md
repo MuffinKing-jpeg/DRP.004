@@ -2,7 +2,6 @@
 
 Quack with the **new level**!
 ![bottom image](/Images/DRP.004_overview.png)
-![bottom image](/Images/DRP.004_bot.png)
 
 ## Docs
 
@@ -19,11 +18,14 @@ Quack with the **new level**!
 - MOAR SILK!
 - ENIG
 
+## Changes in v4.2
+
+- Switches moved to SMT parts
+- Moved USB to same side as other user interfaces
+- Changed battery connector to PH2.0
+- Changed NTC thermistor to 0402
+- Rerouted almost everything
+
 ## Issues to overcome
 
-- [x] Replace R16 from 10k to 3.3k
-- [x] ~~Replace Q2 and Q1(?) to IRLML6402~~ Refactored power supply
-- [x] Reroute EN_LOAD_BAT to PA8
-- [x] Reroute EN_LDR to PA11
-- [x] Reroute ADC_LDR to PA12
-- [x] Fix typos
+- [] Please works as v3
