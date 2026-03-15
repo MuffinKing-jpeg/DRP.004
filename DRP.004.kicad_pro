@@ -714,10 +714,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "PLOTS/Assembly/",
+      "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "DRP.004.step",
+      "step": "DRP.004_mech_no_part.step",
       "svg": "",
       "vrml": ""
     },

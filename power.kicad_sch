@@ -7,7 +7,7 @@
 	(title_block
 		(title "DRP.004")
 		(date "2025-04-05")
-		(rev "v4")
+		(rev "v4.3")
 		(company "SaintCarbonara")
 		(comment 1 "QUACK-QUACK, MAFAKA!")
 		(comment 2 "QUACK-QUACK, MAFAKA!")
@@ -1423,7 +1423,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "*NTC* *Thermistor* PIN?ARRAY* bornier* *Terminal?Block* R_*"
+			(property "ki_fp_filters" "R_* RV_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3976,12 +3976,6 @@
 		(uuid "627266b9-0644-41a8-8341-1408b406799c")
 	)
 	(junction
-		(at 257.81 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7472c907-290d-4182-bd1c-f4ddd690aacc")
-	)
-	(junction
 		(at 157.48 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4067,7 +4061,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 123.19) (xy 259.08 123.19)
+			(xy 226.06 123.19) (xy 241.3 123.19)
 		)
 		(stroke
 			(width 0)
@@ -4207,6 +4201,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 123.19) (xy 259.08 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bad9980-f392-4243-b396-2960673a3c7e")
+	)
+	(wire
+		(pts
 			(xy 193.04 66.04) (xy 201.93 66.04)
 		)
 		(stroke
@@ -4217,7 +4221,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 66.04) (xy 257.81 66.04)
+			(xy 254 66.04) (xy 265.43 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4457,7 +4461,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 71.12) (xy 257.81 76.2)
+			(xy 270.51 66.04) (xy 270.51 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4827,16 +4831,6 @@
 	)
 	(wire
 		(pts
-			(xy 280.67 66.04) (xy 269.24 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a52491d0-23e6-411d-a3d8-aac397197f0f")
-	)
-	(wire
-		(pts
 			(xy 168.91 123.19) (xy 171.45 123.19)
 		)
 		(stroke
@@ -5117,16 +5111,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 66.04) (xy 261.62 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2007181-badf-415b-877c-d0fe642cbe4f")
-	)
-	(wire
-		(pts
 			(xy 233.68 74.93) (xy 233.68 76.2)
 		)
 		(stroke
@@ -5196,17 +5180,17 @@
 		(uuid "fa9b9c4b-906b-40f0-ae1d-a8141c9fd584")
 	)
 	(label "servo_cntrl"
-		(at 280.67 66.04 180)
+		(at 254 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "0b754230-c52d-4305-8429-19d0395d4333")
 	)
 	(label "servo_cntrl"
-		(at 245.11 123.19 0)
+		(at 226.06 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6358,7 +6342,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 257.81 76.2 0)
+		(at 270.51 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6366,7 +6350,7 @@
 		(dnp no)
 		(uuid "43cc3d04-e7de-4dff-b57f-94fd6b2e85ff")
 		(property "Reference" "#PWR027"
-			(at 257.81 82.55 0)
+			(at 270.51 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6375,7 +6359,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 259.842 80.518 0)
+			(at 272.542 79.248 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6384,7 +6368,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 257.81 76.2 0)
+			(at 270.51 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6393,7 +6377,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 257.81 76.2 0)
+			(at 270.51 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6402,7 +6386,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 257.81 76.2 0)
+			(at 270.51 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7520,7 +7504,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 265.43 66.04 90)
+		(at 245.11 123.19 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7528,7 +7512,7 @@
 		(dnp no)
 		(uuid "7239c867-30be-44c6-a6b9-089a93f94f37")
 		(property "Reference" "R7"
-			(at 265.43 59.69 90)
+			(at 245.11 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7536,7 +7520,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 265.43 62.23 90)
+			(at 245.11 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7544,7 +7528,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 265.43 67.818 90)
+			(at 245.11 124.968 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7553,7 +7537,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 265.43 66.04 0)
+			(at 245.11 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7562,7 +7546,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 265.43 66.04 0)
+			(at 245.11 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7859,24 +7843,24 @@
 	)
 	(symbol
 		(lib_id "Muffin_DIODES:TPD1E10B06DPYR")
-		(at 257.81 54.61 270)
+		(at 254 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "98bcfc34-a0be-4192-bfac-01d222132a4f")
 		(property "Reference" "U3"
-			(at 258.826 68.58 90)
+			(at 267.97 62.23 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "TPD1E10B06DPYR"
-			(at 262.255 69.215 0)
+			(at 268.605 61.595 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7885,7 +7869,7 @@
 			)
 		)
 		(property "Footprint" "Muffin_SMD:X1SON-2_L1.0-W0.6-P0.65-BI"
-			(at 253.746 68.326 0)
+			(at 267.716 70.104 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7895,7 +7879,7 @@
 			)
 		)
 		(property "Datasheet" "TPD1E10B06DPYR"
-			(at 255.778 69.088 0)
+			(at 268.478 68.072 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7905,7 +7889,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 257.81 54.61 0)
+			(at 254 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7914,7 +7898,7 @@
 			)
 		)
 		(property "LCSC" "C48260"
-			(at 251.46 68.072 0)
+			(at 267.462 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8229,7 +8213,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "VBAT"
 			(at 109.22 116.0779 0)
 			(effects
 				(font

@@ -198,6 +198,43 @@
     },
     {
       "description": "",
+      "id": "e5a6870e-fcf8-4272-b3fb-1483cb82f270",
+      "settings": {
+        "board_only": false,
+        "board_outlines_chaining_epsilon": 0.01,
+        "cut_vias_in_body": false,
+        "description": "",
+        "export_board_body": true,
+        "export_components": false,
+        "export_inner_copper": false,
+        "export_pads": true,
+        "export_silkscreen": true,
+        "export_soldermask": true,
+        "export_tracks": true,
+        "export_zones": false,
+        "fill_all_vias": false,
+        "format": "step",
+        "fuse_shapes": false,
+        "include_dnp": true,
+        "include_unspecified": true,
+        "occt_format": 0,
+        "optimize_step": true,
+        "output_filename": "DRP.004_no_parts.step",
+        "overwrite": false,
+        "subst_models": true,
+        "use_defined_origin": false,
+        "use_drill_origin": false,
+        "use_grid_origin": false,
+        "use_pcb_center_origin": true,
+        "user_origin.x": 178.0,
+        "user_origin.y": 84.5,
+        "vrml_model_dir": "",
+        "vrml_relative_paths": false
+      },
+      "type": "pcb_export_3d"
+    },
+    {
+      "description": "",
       "id": "de063a94-c667-42c3-933b-abf23c947dfb",
       "settings": {
         "description": "",
@@ -367,23 +404,24 @@
           "In5.Cu",
           "In4.Cu",
           "In3.Cu",
+          "F.Paste",
           "F.Fab"
         ],
         "layers_to_include_on_all_layers": [
-          "F.CrtYd",
+          "Dwgs.User",
           "User.3",
           "Edge.Cuts"
         ],
         "mirror": false,
         "negative": false,
         "output_filename": "",
-        "pdf_gen_mode": "all-layers-separate-files",
+        "pdf_gen_mode": "one-page-per-layer-one-file",
         "pdf_metadata": true,
         "plot_drawing_sheet": true,
         "plot_footprint_values": true,
         "plot_pad_numbers": false,
         "plot_ref_des": true,
-        "single_document": false,
+        "single_document": true,
         "sketch_dnp_footprints_on_fab_layers": true,
         "sketch_pads_on_fab_layers": false,
         "subtract_solder_mask_from_silk": false,
@@ -533,7 +571,8 @@
       "description": "Mechanical",
       "id": "97f65e24-d911-4638-a004-fdba7653b78b",
       "only": [
-        "429c2501-3c40-4a05-ab29-f09575680dad"
+        "429c2501-3c40-4a05-ab29-f09575680dad",
+        "e5a6870e-fcf8-4272-b3fb-1483cb82f270"
       ],
       "settings": {
         "output_path": "/home/andrii/Project/DRP.004/Mechanical/"

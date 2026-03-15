@@ -26,6 +26,13 @@ Quack with the **new level**!
 - Changed NTC thermistor to 0402
 - Rerouted almost everything
 
+## Changes in v4.3
+
+- Threw to trash few useless resistors  
+- Removed power-on by button
+- Squished PCB to 27*42mm size  
+- Fresh docs
+
 ## Issues to overcome
 
 - [] Please works as v3
