@@ -41,9 +41,7 @@ jobs:
 
       - name: Run KiCad jobset (skip 3D renders)
         run: |
-          mkdir docs docs/mech docs/production docs/sch
-          kicad-cli jobset run --file docs_update.kicad_jobset --output \
-            mechanical,production,assembly,schematics
+          kicad-cli jobset run --file docs_update.kicad_jobset --output mechanical production assembly schematics
 
       - name: List generated outputs
         run: find docs/ -type f | sort
