@@ -21,7 +21,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends kicad
 
-      - name: Extract PROJECT_VERSION from kicad_pro
+      - name: Extract PROJECT_REVISION from kicad_pro
         id: get_version
         run: |
           VERSION=$(python3 -c "
@@ -41,7 +41,11 @@ jobs:
 
       - name: Run KiCad jobset (skip 3D renders)
         run: |
-          kicad-cli jobset run --file docs_update.kicad_jobset --output mechanical production assembly schematics
+          mkdir docs docs/mech docs/production docs/sch
+          kicad-cli jobset run -f docs_update.kicad_jobset --output assembly ./DRP.004.kicad_pro
+          kicad-cli jobset run -f docs_update.kicad_jobset --output production ./DRP.004.kicad_pro
+          kicad-cli jobset run -f docs_update.kicad_jobset --output mechanical ./DRP.004.kicad_pro
+          kicad-cli jobset run -f docs_update.kicad_jobset --output schematics ./DRP.004.kicad_pro
 
       - name: List generated outputs
         run: find docs/ -type f | sort
