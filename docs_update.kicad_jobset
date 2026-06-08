@@ -379,7 +379,7 @@
       "settings": {
         "back_fp_property_popups": true,
         "background_color": "rgba(0, 0, 0, 0.000)",
-        "black_and_white": false,
+        "black_and_white": true,
         "check_zones": false,
         "color_theme": "",
         "crossout_dnp_footprints_on_fab_layers": true,
@@ -417,13 +417,10 @@
           "In5.Cu",
           "In4.Cu",
           "In3.Cu",
-          "In2.Cu",
-          "In1.Cu"
+          "F.Fab"
         ],
         "layers_to_include_on_all_layers": [
-          "F.Fab",
-          "Dwgs.User",
-          "User.3",
+          "F.CrtYd",
           "Edge.Cuts"
         ],
         "mirror": false,

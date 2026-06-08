@@ -761,7 +761,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "SOLDERMAP_${PROJECTNAME}_${CURRENT_DATE}.pdf",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "DRP.004_mech_no_part.step",
@@ -776,7 +776,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "PLOTS/Assembly/DRP.004_${REVISION}.csv",
+    "bom_export_filename": "BOM_${PROJECTNAME}_${CURRENT_DATE}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
