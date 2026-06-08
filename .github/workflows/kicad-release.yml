@@ -28,7 +28,7 @@ jobs:
           import json
           with open('DRP.004.kicad_pro') as f:
               data = json.load(f)
-          print(data['text_variables']['PROJECT_VERSION'])
+          print(data['text_variables']['PROJECT_REVISION'])
           ")
 
           if [ -z "$VERSION" ]; then
@@ -41,6 +41,7 @@ jobs:
 
       - name: Run KiCad jobset (skip 3D renders)
         run: |
+          mkdir docs docs/mech docs/production docs/sch
           kicad-cli jobset run --file docs_update.kicad_jobset --output \
             mechanical,production,assembly,schematics
 
