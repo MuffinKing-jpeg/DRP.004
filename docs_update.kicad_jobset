@@ -180,19 +180,19 @@
         "export_zones": true,
         "fill_all_vias": false,
         "format": "step",
-        "fuse_shapes": false,
+        "fuse_shapes": true,
         "include_dnp": false,
         "include_unspecified": true,
         "occt_format": 0,
         "optimize_step": true,
-        "output_filename": "${PROJECTNAME}.step",
-        "overwrite": false,
+        "output_filename": "MECH_${PROJECTNAME}_${CURRENT_DATE}.step",
+        "overwrite": true,
         "subst_models": true,
         "use_defined_origin": false,
         "use_drill_origin": false,
-        "use_grid_origin": true,
-        "use_pcb_center_origin": false,
-        "user_origin.x": 184.5,
+        "use_grid_origin": false,
+        "use_pcb_center_origin": true,
+        "user_origin.x": 178.0,
         "user_origin.y": 84.5,
         "variant": "",
         "vrml_model_dir": "",
@@ -218,20 +218,20 @@
         "export_zones": false,
         "fill_all_vias": false,
         "format": "step",
-        "fuse_shapes": false,
+        "fuse_shapes": true,
         "include_dnp": true,
         "include_unspecified": true,
         "occt_format": 0,
         "optimize_step": true,
-        "output_filename": "${PROJECTNAME}_no_parts.step",
-        "overwrite": false,
+        "output_filename": "MECH_${PROJECTNAME}_BODY_${CURRENT_DATE}.step",
+        "overwrite": true,
         "subst_models": true,
         "use_defined_origin": false,
         "use_drill_origin": false,
         "use_grid_origin": false,
         "use_pcb_center_origin": true,
-        "user_origin.x": 142.54783,
-        "user_origin.y": 86.04988,
+        "user_origin.x": 178.0,
+        "user_origin.y": 84.5,
         "variant": "",
         "vrml_model_dir": "",
         "vrml_relative_paths": false
@@ -579,7 +579,7 @@
         "077da8ef-6ee4-4d77-840b-33b150f26960"
       ],
       "settings": {
-        "output_path": "${KIPRJMOD}//Images/"
+        "output_path": "${KIPRJMOD}/docs/img/"
       },
       "type": "folder"
     },
@@ -591,7 +591,7 @@
         "e5a6870e-fcf8-4272-b3fb-1483cb82f270"
       ],
       "settings": {
-        "output_path": "${KIPRJMOD}//Mechanical/"
+        "output_path": "${KIPRJMOD}docs/mech/"
       },
       "type": "folder"
     },
@@ -605,7 +605,7 @@
       ],
       "settings": {
         "format": "zip",
-        "output_path": "${KIPRJMOD}/production/PRODUCTION_${CURRENT_DATE}"
+        "output_path": "${KIPRJMOD}/docs/production/PRODUCTION_${CURRENT_DATE}"
       },
       "type": "archive"
     },
@@ -619,7 +619,7 @@
         "e5125c40-9639-4e7a-82a5-414d2e97dc4b"
       ],
       "settings": {
-        "output_path": "${KIPRJMOD}/production/"
+        "output_path": "${KIPRJMOD}/docs/production"
       },
       "type": "folder"
     },
@@ -633,7 +633,7 @@
         "4bdd457a-9aa0-4482-8c59-096b0b1ebc2e"
       ],
       "settings": {
-        "output_path": "${KIPRJMOD}/Docs/"
+        "output_path": "${KIPRJMOD}/docs/sch"
       },
       "type": "folder"
     }

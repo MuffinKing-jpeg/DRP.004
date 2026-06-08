@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "990f0ec4-1b5b-4db8-8f39-ecd88fffeea0")
 	(paper "A4")
 	(title_block
@@ -19,49 +19,61 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#G"
 				(at 0 1.8659 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "LOGO"
 				(at 0 -1.8659 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" "DUCK:DUCK"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "LOGO_0_0"
@@ -132,67 +144,83 @@
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#SYM"
 				(at -3.81 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "SYM_Flash_Large"
 				(at 3.302 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at -0.254 -2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 10.16 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Flash symbol, large"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Sim.Enable" "0"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "graphic symbol flash VAC 220VAC 110VAC power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "SYM_Flash_Large_0_1"
@@ -228,8 +256,12 @@
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "FID"
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -238,6 +270,8 @@
 			)
 			(property "Value" "Fiducial"
 				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -246,47 +280,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Fiducial Marker"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "fiducial marker"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Fiducial*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Fiducial_0_1"
@@ -315,7 +359,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 04497dba-76d8-460f-b939-a50d9e9f89c7)
+		(uuid "04497dba-76d8-460f-b939-a50d9e9f89c7")
 	)
 	(rectangle
 		(start 208.788 100.965)
@@ -328,7 +372,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 1969c264-c746-4c9f-8564-0cff2eb10d09)
+		(uuid "1969c264-c746-4c9f-8564-0cff2eb10d09")
 	)
 	(rectangle
 		(start 84.328 100.965)
@@ -341,7 +385,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 223de2e8-32e5-49d8-b5be-8168bd7ee976)
+		(uuid "223de2e8-32e5-49d8-b5be-8168bd7ee976")
 	)
 	(rectangle
 		(start 208.788 79.248)
@@ -354,7 +398,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 276f7c1b-0eb3-4071-a2cc-10a29241b498)
+		(uuid "276f7c1b-0eb3-4071-a2cc-10a29241b498")
 	)
 	(rectangle
 		(start 63.373 101.092)
@@ -366,7 +410,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 334c2a79-22a4-48c6-981b-daa157cf0ae3)
+		(uuid "334c2a79-22a4-48c6-981b-daa157cf0ae3")
 	)
 	(rectangle
 		(start 151.003 101.092)
@@ -379,7 +423,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 36734128-b4b3-4267-9273-0aacbea04fbe)
+		(uuid "36734128-b4b3-4267-9273-0aacbea04fbe")
 	)
 	(rectangle
 		(start 124.968 101.092)
@@ -392,7 +436,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 3b06fddc-9168-419f-9c56-84b554ee6479)
+		(uuid "3b06fddc-9168-419f-9c56-84b554ee6479")
 	)
 	(rectangle
 		(start 193.04 101.092)
@@ -405,7 +449,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 691760a3-acca-4198-9583-a12e60663b42)
+		(uuid "691760a3-acca-4198-9583-a12e60663b42")
 	)
 	(rectangle
 		(start 124.333 79.502)
@@ -417,7 +461,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 738c3083-6e78-4c4e-bf20-025f2ee9ef72)
+		(uuid "738c3083-6e78-4c4e-bf20-025f2ee9ef72")
 	)
 	(rectangle
 		(start 124.46 63.246)
@@ -430,7 +474,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 90261dc8-ef36-41c2-b6fc-6a14784ed8a7)
+		(uuid "90261dc8-ef36-41c2-b6fc-6a14784ed8a7")
 	)
 	(rectangle
 		(start 172.212 101.092)
@@ -443,7 +487,7 @@
 		(fill
 			(type none)
 		)
-		(uuid c93f861e-8603-49cb-8934-ea40efca0f0c)
+		(uuid "c93f861e-8603-49cb-8934-ea40efca0f0c")
 	)
 	(text "Slider switch\n+\nPower latch"
 		(exclude_from_sim no)
@@ -4025,14 +4069,18 @@
 		(lib_id "Mechanical:Fiducial")
 		(at 162.56 186.69 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e7ccaac-f930-49f0-974c-6b38abc6ac65")
 		(property "Reference" "FID2"
 			(at 165.1 185.4199 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4042,6 +4090,8 @@
 		)
 		(property "Value" "Fiducial"
 			(at 165.1 187.9599 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4051,29 +4101,35 @@
 		)
 		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1.5mm"
 			(at 162.56 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 162.56 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 162.56 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -4089,14 +4145,18 @@
 		(lib_id "Mechanical:Fiducial")
 		(at 162.56 193.04 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bedd5e64-9b4e-44d8-baa8-18c030a6c837")
 		(property "Reference" "FID3"
 			(at 165.1 191.7699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4106,6 +4166,8 @@
 		)
 		(property "Value" "Fiducial"
 			(at 165.1 194.3099 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4115,29 +4177,35 @@
 		)
 		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1.5mm"
 			(at 162.56 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 162.56 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 162.56 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -4153,59 +4221,71 @@
 		(lib_id "DUCK:LOGO")
 		(at 264.16 158.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6e0dec5-616a-4681-b463-fe98161cf283")
 		(property "Reference" "#G1"
 			(at 264.16 156.8841 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "LOGO"
 			(at 264.16 160.6159 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "DUCK:DUCK"
 			(at 264.16 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 264.16 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 264.16 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
-			(project ""
+			(project "DRP.004"
 				(path "/990f0ec4-1b5b-4db8-8f39-ecd88fffeea0"
 					(reference "#G1")
 					(unit 1)
@@ -4217,14 +4297,18 @@
 		(lib_id "Mechanical:Fiducial")
 		(at 162.56 180.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db2af2cd-6c4d-4df9-ba70-6b08865c065e")
 		(property "Reference" "FID1"
 			(at 165.1 179.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4234,6 +4318,8 @@
 		)
 		(property "Value" "Fiducial"
 			(at 165.1 181.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4243,33 +4329,39 @@
 		)
 		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1.5mm"
 			(at 162.56 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 162.56 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 162.56 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
-			(project ""
+			(project "DRP.004"
 				(path "/990f0ec4-1b5b-4db8-8f39-ecd88fffeea0"
 					(reference "FID1")
 					(unit 1)
@@ -4281,67 +4373,70 @@
 		(lib_id "Graphic:SYM_Flash_Large")
 		(at 254 156.21 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "ec228486-8d58-41ac-bf10-8b008990b3b2")
 		(property "Reference" "#SYM1"
 			(at 250.19 156.21 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "SYM_Flash_Large"
 			(at 257.302 156.21 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Symbol:Symbol_HighVoltage_NoTriangle_2x5mm_Copper"
 			(at 253.238 163.576 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 264.16 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Flash symbol, large"
 			(at 254 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 254 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(instances
-			(project ""
+			(project "DRP.004"
 				(path "/990f0ec4-1b5b-4db8-8f39-ecd88fffeea0"
 					(reference "#SYM1")
 					(unit 1)
@@ -4362,11 +4457,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "6cce2e90-e51c-4942-a042-f4f9f078d271")
 		(property "Sheetname" "power"
 			(at 231.14 24.3074 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4376,6 +4473,8 @@
 		)
 		(property "Sheetfile" "power.kicad_sch"
 			(at 231.14 31.3186 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4404,11 +4503,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "9a8ba87a-c59f-4592-a0ef-e35d3bfde58d")
 		(property "Sheetname" "control"
 			(at 231.013 36.2454 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4418,6 +4519,8 @@
 		)
 		(property "Sheetfile" "control.kicad_sch"
 			(at 231.013 43.2566 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
