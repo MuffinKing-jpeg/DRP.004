@@ -31,8 +31,8 @@
           0.0,
           0.0
         ],
-        "output_filename": "DRP.004_top.png",
-        "pan_x": 0.0,
+        "output_filename": "top.png",
+        "pan_x": 3.0,
         "pan_y": 0.0,
         "pan_z": 0.0,
         "perspective": false,
@@ -48,8 +48,9 @@
         "rotation_z": 0.0,
         "side": "top",
         "use_board_stackup_colors": true,
+        "variant": "",
         "width": 1920,
-        "zoom": 1.4
+        "zoom": 1.2
       },
       "type": "pcb_render"
     },
@@ -84,8 +85,8 @@
           0.0,
           0.0
         ],
-        "output_filename": "DRP.004_bot.png",
-        "pan_x": 0.0,
+        "output_filename": "bot.png",
+        "pan_x": -3.0,
         "pan_y": 0.0,
         "pan_z": 0.0,
         "perspective": false,
@@ -101,8 +102,9 @@
         "rotation_z": 0.0,
         "side": "bottom",
         "use_board_stackup_colors": true,
+        "variant": "",
         "width": 1920,
-        "zoom": 1.4
+        "zoom": 1.2
       },
       "type": "pcb_render"
     },
@@ -137,9 +139,9 @@
           0.0,
           0.0
         ],
-        "output_filename": "DRP.004_overview.png",
-        "pan_x": 1.0,
-        "pan_y": 1.0,
+        "output_filename": "overview.png",
+        "pan_x": 4.0,
+        "pan_y": 0.0,
         "pan_z": 0.0,
         "perspective": true,
         "pivot_x": 0.0,
@@ -154,8 +156,9 @@
         "rotation_z": 15.0,
         "side": "top",
         "use_board_stackup_colors": true,
+        "variant": "",
         "width": 1920,
-        "zoom": 1.35
+        "zoom": 1.0
       },
       "type": "pcb_render"
     },
@@ -182,7 +185,7 @@
         "include_unspecified": true,
         "occt_format": 0,
         "optimize_step": true,
-        "output_filename": "DRP.004.step",
+        "output_filename": "${PROJECTNAME}.step",
         "overwrite": false,
         "subst_models": true,
         "use_defined_origin": false,
@@ -191,6 +194,7 @@
         "use_pcb_center_origin": false,
         "user_origin.x": 184.5,
         "user_origin.y": 84.5,
+        "variant": "",
         "vrml_model_dir": "",
         "vrml_relative_paths": false
       },
@@ -219,15 +223,16 @@
         "include_unspecified": true,
         "occt_format": 0,
         "optimize_step": true,
-        "output_filename": "DRP.004_no_parts.step",
+        "output_filename": "${PROJECTNAME}_no_parts.step",
         "overwrite": false,
         "subst_models": true,
         "use_defined_origin": false,
         "use_drill_origin": false,
         "use_grid_origin": false,
         "use_pcb_center_origin": true,
-        "user_origin.x": 178.0,
-        "user_origin.y": 84.5,
+        "user_origin.x": 142.54783,
+        "user_origin.y": 86.04988,
+        "variant": "",
         "vrml_model_dir": "",
         "vrml_relative_paths": false
       },
@@ -242,7 +247,9 @@
         "format": "report",
         "output_filename": "DRC_result",
         "parity": true,
+        "refill_zones": false,
         "report_all_track_errors": false,
+        "save_board": false,
         "severity": 48,
         "units": "mm"
       },
@@ -253,6 +260,7 @@
       "id": "80a709c1-6ec9-4ec5-987f-c40da409c833",
       "settings": {
         "black_and_white": true,
+        "check_zones": false,
         "create_gerber_job_file": true,
         "crossout_dnp_footprints_on_fab_layers": true,
         "description": "",
@@ -266,7 +274,6 @@
           "B.Mask",
           "B.Paste",
           "B.SilkS",
-          "B.Fab",
           "In30.Cu",
           "In29.Cu",
           "In28.Cu",
@@ -301,14 +308,12 @@
           "F.Mask",
           "F.Paste",
           "F.SilkS",
-          "F.Fab",
-          "User.3",
           "Edge.Cuts"
         ],
         "layers_to_include_on_all_layers": [],
         "mirror": false,
         "negative": false,
-        "output_filename": "",
+        "output_filename": "GERBER_${PROJECTNAME}_${CURRENT_DATE}",
         "plot_drawing_sheet": false,
         "plot_footprint_values": true,
         "plot_pad_numbers": false,
@@ -318,8 +323,9 @@
         "sketch_pads_on_fab_layers": false,
         "subtract_solder_mask_from_silk": false,
         "use_drill_origin": false,
-        "use_protel_file_extension": true,
-        "use_x2_format": true
+        "use_protel_file_extension": false,
+        "use_x2_format": true,
+        "variant": ""
       },
       "type": "pcb_export_gerbers"
     },
@@ -335,9 +341,12 @@
         "excellon.oval_drill_route": false,
         "format": "gerber",
         "generate_map": true,
+        "generate_report": false,
+        "generate_tenting": false,
         "gerber_precision": 5,
         "map_format": "gerberx2",
-        "output_dir": "",
+        "output_dir": "DRILL_${PROJECTNAME}_${CURRENT_DATE}",
+        "report_filename": "",
         "units": "in",
         "zero_format": "decimal"
       },
@@ -348,17 +357,19 @@
       "id": "561df102-e73c-416e-a137-a8d30fa4dd86",
       "settings": {
         "description": "",
-        "exclude_dnp": true,
+        "exclude_bom": false,
+        "exclude_dnp": false,
         "exclude_footprints_with_th": false,
         "format": "gerber",
         "gerber_board_edge": true,
         "negate_bottom_x": false,
-        "output_filename": "",
+        "output_filename": "PNP_${PROJECTNAME}_${CURRENT_DATE}",
         "side": "both",
         "single_file": false,
         "smd_only": false,
         "units": "mm",
-        "use_drill_place_file_origin": true
+        "use_drill_place_file_origin": true,
+        "variant": ""
       },
       "type": "pcb_export_pos"
     },
@@ -367,7 +378,9 @@
       "id": "c4020c29-a403-45f5-83ca-ee565092057d",
       "settings": {
         "back_fp_property_popups": true,
+        "background_color": "rgba(0, 0, 0, 0.000)",
         "black_and_white": false,
+        "check_zones": false,
         "color_theme": "",
         "crossout_dnp_footprints_on_fab_layers": true,
         "description": "",
@@ -404,28 +417,31 @@
           "In5.Cu",
           "In4.Cu",
           "In3.Cu",
-          "F.Paste",
-          "F.Fab"
+          "In2.Cu",
+          "In1.Cu"
         ],
         "layers_to_include_on_all_layers": [
+          "F.Fab",
           "Dwgs.User",
           "User.3",
           "Edge.Cuts"
         ],
         "mirror": false,
         "negative": false,
-        "output_filename": "",
+        "output_filename": "SOLDERMAP_${PROJECTNAME}_${CURRENT_DATE}",
         "pdf_gen_mode": "one-page-per-layer-one-file",
         "pdf_metadata": true,
         "plot_drawing_sheet": true,
         "plot_footprint_values": true,
         "plot_pad_numbers": false,
         "plot_ref_des": true,
+        "scale": 2.0,
         "single_document": true,
         "sketch_dnp_footprints_on_fab_layers": true,
         "sketch_pads_on_fab_layers": false,
         "subtract_solder_mask_from_silk": false,
-        "use_drill_origin": false
+        "use_drill_origin": false,
+        "variant": ""
       },
       "type": "pcb_export_pdf"
     },
@@ -451,18 +467,18 @@
         "description": "",
         "drawing_sheet": "",
         "format": "pdf",
-        "hpgl_page_size": "default",
-        "hpgl_pen_size": 1.016,
-        "hpgl_plot_origin": "A3",
         "min_pen_width": 847,
-        "output_dir": "",
+        "output_filename": "SCH_${PROJECTNAME}_${CURRENT_DATE}.pdf",
         "page_size": "auto",
         "pdf_hierarchical_links": true,
         "pdf_metadata": true,
         "pdf_property_popups": true,
         "plot_all": true,
         "plot_drawing_sheet": true,
-        "use_background_color": true
+        "show_hop_over": false,
+        "use_background_color": true,
+        "variant_name": "",
+        "variant_names": []
       },
       "type": "sch_export_plot_pdf"
     },
@@ -485,13 +501,12 @@
           "Description",
           "Qty",
           "Color",
-          "LCSC",
+          "lcsc",
           "Sim.Device",
           "Sim.Pins",
           "Tolerance",
           "Tolerance ",
-          "coef",
-          "lcsc"
+          "coef"
         ],
         "fields_ordered": [
           "${ITEM_NUMBER}",
@@ -501,25 +516,25 @@
           "__Datasheet",
           "Description",
           "${QUANTITY}",
-          "__Color",
+          "Color",
           "LCSC",
           "__Sim.Device",
           "__Sim.Pins",
           "Tolerance",
           "__Tolerance ",
-          "__coef",
-          "__lcsc"
+          "__coef"
         ],
         "filter_string": "",
-        "include_excluded_from_bom": false,
+        "group_symbols": true,
         "keep_line_breaks": false,
         "keep_tabs": false,
-        "output_filename": "DRP.004.csv",
+        "output_filename": "BOM_${PROJECTNAME}_${CURRENT_DATE}.csv",
         "ref_delimiter": ",",
         "ref_range_delimiter": "",
         "sort_asc": true,
         "sort_field": "${ITEM_NUMBER}",
-        "string_delimiter": "\""
+        "string_delimiter": "\"",
+        "variant_names": []
       },
       "type": "sch_export_bom"
     },
@@ -532,8 +547,9 @@
         "output_filename": "netlist",
         "spice.save_all_currents": false,
         "spice.save_all_dissipations": false,
-        "spice.save_all_events": true,
-        "spice.save_all_voltages": false
+        "spice.save_all_events": false,
+        "spice.save_all_voltages": false,
+        "variant_names": []
       },
       "type": "sch_export_netlist"
     },
@@ -541,7 +557,7 @@
       "description": "Generate Ibom",
       "id": "446bae5b-3870-422c-a79a-05e2ebbd515d",
       "settings": {
-        "command": "generate_interactive_bom --dark-mode --show-fabrication  --highlight-pin1 selected --checkboxes Placed --bom-view left-right --layer-view F --dest-dir Docs --name-format ibom --blacklist TP* --no-browser \"${KIPRJMOD}/DRP.004.kicad_pcb\"",
+        "command": "generate_interactive_bom --dark-mode --show-fabrication  --highlight-pin1 selected --checkboxes Placed --bom-view left-right --layer-view F --dest-dir Docs --name-format ibom --blacklist TP* --no-browser \"${KIPRJMOD}/${PROJECTNAME}.kicad_pcb\"",
         "description": "",
         "ignore_exit_code": false,
         "output_filename": "446bae5b-3870-422c-a79a-05e2ebbd515d.log",
@@ -563,7 +579,7 @@
         "077da8ef-6ee4-4d77-840b-33b150f26960"
       ],
       "settings": {
-        "output_path": "/home/andrii/Project/DRP.004/Images/"
+        "output_path": "${KIPRJMOD}//Images/"
       },
       "type": "folder"
     },
@@ -575,22 +591,21 @@
         "e5a6870e-fcf8-4272-b3fb-1483cb82f270"
       ],
       "settings": {
-        "output_path": "/home/andrii/Project/DRP.004/Mechanical/"
+        "output_path": "${KIPRJMOD}//Mechanical/"
       },
       "type": "folder"
     },
     {
-      "description": "Production",
+      "description": "production",
       "id": "37c9b034-58ad-4877-a737-1202819a15aa",
       "only": [
-        "de063a94-c667-42c3-933b-abf23c947dfb",
         "80a709c1-6ec9-4ec5-987f-c40da409c833",
         "d9ea2de8-d741-43ce-9619-cdd9be637a5a",
         "561df102-e73c-416e-a137-a8d30fa4dd86"
       ],
       "settings": {
         "format": "zip",
-        "output_path": "/home/andrii/Project/DRP.004/production/Production.zip"
+        "output_path": "${KIPRJMOD}/production/PRODUCTION_${CURRENT_DATE}"
       },
       "type": "archive"
     },
@@ -604,7 +619,7 @@
         "e5125c40-9639-4e7a-82a5-414d2e97dc4b"
       ],
       "settings": {
-        "output_path": "/home/andrii/Project/DRP.004/production/"
+        "output_path": "${KIPRJMOD}/production/"
       },
       "type": "folder"
     },
@@ -615,11 +630,10 @@
         "081b8277-230b-4685-8dac-f8af26c27f9e",
         "853f33fb-b667-4038-aec3-0e764ecf02fd",
         "e5125c40-9639-4e7a-82a5-414d2e97dc4b",
-        "4bdd457a-9aa0-4482-8c59-096b0b1ebc2e",
-        "446bae5b-3870-422c-a79a-05e2ebbd515d"
+        "4bdd457a-9aa0-4482-8c59-096b0b1ebc2e"
       ],
       "settings": {
-        "output_path": "/home/andrii/Project/DRP.004/Docs/"
+        "output_path": "${KIPRJMOD}/Docs/"
       },
       "type": "folder"
     }
