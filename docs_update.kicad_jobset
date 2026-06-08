@@ -586,7 +586,6 @@
       "description": "assembly",
       "id": "20ef82dd-e4a7-40ed-bf70-f52a9a24cfa2",
       "only": [
-        "de063a94-c667-42c3-933b-abf23c947dfb",
         "561df102-e73c-416e-a137-a8d30fa4dd86",
         "c4020c29-a403-45f5-83ca-ee565092057d",
         "e5125c40-9639-4e7a-82a5-414d2e97dc4b"
