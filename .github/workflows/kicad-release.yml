@@ -42,17 +42,9 @@ jobs:
       - name: Run KiCad jobset (skip 3D renders)
         run: |
           mkdir docs docs/mech docs/production docs/sch
-          
-          sleep 10
           kicad-cli jobset run -f docs_update.kicad_jobset --output assembly ./DRP.004.kicad_pro
-
-          sleep 10
           kicad-cli jobset run -f docs_update.kicad_jobset --output production ./DRP.004.kicad_pro
-
-          sleep 10
           kicad-cli jobset run -f docs_update.kicad_jobset --output mechanical ./DRP.004.kicad_pro
-
-          sleep 10
           kicad-cli jobset run -f docs_update.kicad_jobset --output schematics ./DRP.004.kicad_pro
 
       - name: List generated outputs

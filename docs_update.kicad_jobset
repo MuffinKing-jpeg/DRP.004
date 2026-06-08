@@ -245,7 +245,7 @@
         "description": "",
         "fail_on_error": true,
         "format": "report",
-        "output_filename": "DRC_result",
+        "output_filename": "DRC_result.txt",
         "parity": true,
         "refill_zones": false,
         "report_all_track_errors": false,
@@ -428,7 +428,7 @@
         ],
         "mirror": false,
         "negative": false,
-        "output_filename": "SOLDERMAP_${PROJECTNAME}_${CURRENT_DATE}",
+        "output_filename": "SOLDERMAP_${PROJECTNAME}_${CURRENT_DATE}.pdf",
         "pdf_gen_mode": "one-page-per-layer-one-file",
         "pdf_metadata": true,
         "plot_drawing_sheet": true,
@@ -452,7 +452,7 @@
         "description": "",
         "fail_on_error": true,
         "format": "report",
-        "output_filename": "ERC_result",
+        "output_filename": "ERC_result.txt",
         "severity": 48,
         "units": "mm"
       },
@@ -615,8 +615,7 @@
       "only": [
         "081b8277-230b-4685-8dac-f8af26c27f9e",
         "853f33fb-b667-4038-aec3-0e764ecf02fd",
-        "e5125c40-9639-4e7a-82a5-414d2e97dc4b",
-        "4bdd457a-9aa0-4482-8c59-096b0b1ebc2e"
+        "e5125c40-9639-4e7a-82a5-414d2e97dc4b"
       ],
       "settings": {
         "output_path": "${KIPRJMOD}/docs/sch"
