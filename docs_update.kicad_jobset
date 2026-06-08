@@ -190,8 +190,8 @@
         "subst_models": true,
         "use_defined_origin": false,
         "use_drill_origin": false,
-        "use_grid_origin": false,
-        "use_pcb_center_origin": true,
+        "use_grid_origin": true,
+        "use_pcb_center_origin": false,
         "user_origin.x": 178.0,
         "user_origin.y": 84.5,
         "variant": "",
@@ -228,8 +228,8 @@
         "subst_models": true,
         "use_defined_origin": false,
         "use_drill_origin": false,
-        "use_grid_origin": false,
-        "use_pcb_center_origin": true,
+        "use_grid_origin": true,
+        "use_pcb_center_origin": false,
         "user_origin.x": 178.0,
         "user_origin.y": 84.5,
         "variant": "",
@@ -571,27 +571,28 @@
   },
   "outputs": [
     {
-      "description": "MEDIA",
-      "id": "9bde6d2c-14b9-425a-a5b9-065a096551cb",
-      "only": [
-        "45ec46a7-c420-455c-86c6-5626d43ec953",
-        "618f80a7-86be-48d6-9db5-7031cfc5d584",
-        "077da8ef-6ee4-4d77-840b-33b150f26960"
-      ],
-      "settings": {
-        "output_path": "${KIPRJMOD}/docs/img/"
-      },
-      "type": "folder"
-    },
-    {
-      "description": "Mechanical",
+      "description": "mechanical",
       "id": "97f65e24-d911-4638-a004-fdba7653b78b",
       "only": [
         "429c2501-3c40-4a05-ab29-f09575680dad",
         "e5a6870e-fcf8-4272-b3fb-1483cb82f270"
       ],
       "settings": {
-        "output_path": "${KIPRJMOD}docs/mech/"
+        "output_path": "${KIPRJMOD}/docs/mech/"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "assembly",
+      "id": "20ef82dd-e4a7-40ed-bf70-f52a9a24cfa2",
+      "only": [
+        "de063a94-c667-42c3-933b-abf23c947dfb",
+        "561df102-e73c-416e-a137-a8d30fa4dd86",
+        "c4020c29-a403-45f5-83ca-ee565092057d",
+        "e5125c40-9639-4e7a-82a5-414d2e97dc4b"
+      ],
+      "settings": {
+        "output_path": "${KIPRJMOD}/docs/production"
       },
       "type": "folder"
     },
@@ -610,21 +611,7 @@
       "type": "archive"
     },
     {
-      "description": "Production",
-      "id": "20ef82dd-e4a7-40ed-bf70-f52a9a24cfa2",
-      "only": [
-        "de063a94-c667-42c3-933b-abf23c947dfb",
-        "561df102-e73c-416e-a137-a8d30fa4dd86",
-        "c4020c29-a403-45f5-83ca-ee565092057d",
-        "e5125c40-9639-4e7a-82a5-414d2e97dc4b"
-      ],
-      "settings": {
-        "output_path": "${KIPRJMOD}/docs/production"
-      },
-      "type": "folder"
-    },
-    {
-      "description": "Schematics",
+      "description": "schematics",
       "id": "5d3826c6-9699-4091-88c2-feb3ee685c7e",
       "only": [
         "081b8277-230b-4685-8dac-f8af26c27f9e",
@@ -634,6 +621,19 @@
       ],
       "settings": {
         "output_path": "${KIPRJMOD}/docs/sch"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "images",
+      "id": "ccd91769-1c30-4583-82b8-340e81eefada",
+      "only": [
+        "45ec46a7-c420-455c-86c6-5626d43ec953",
+        "618f80a7-86be-48d6-9db5-7031cfc5d584",
+        "077da8ef-6ee4-4d77-840b-33b150f26960"
+      ],
+      "settings": {
+        "output_path": "${KIPRJMOD}/Images/"
       },
       "type": "folder"
     }
