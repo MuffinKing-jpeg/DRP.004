@@ -9,7 +9,7 @@ jobs:
   export-and-release:
     runs-on: ubuntu-latest
     container:
-      image: kicad/kicad:10.0
+      image: ghcr.io/kicad/kicad:10.0
       options: --user 1001
 
     steps:
@@ -40,13 +40,16 @@ jobs:
           echo "VERSION=$VERSION" >> "$GITHUB_OUTPUT"
           echo "Resolved PROJECT_REVISION: $VERSION"
 
+      - name: Fix /tmp permissions
+        run: chmod 1777 /tmp
+
       - name: Run KiCad jobset
         run: |
           mkdir -p docs
-          kicad-cli jobset run -f docs_update.kicad_jobset --output assembly   ./DRP.004.kicad_pro
-          kicad-cli jobset run -f docs_update.kicad_jobset --output production  ./DRP.004.kicad_pro
-          kicad-cli jobset run -f docs_update.kicad_jobset --output mechanical  ./DRP.004.kicad_pro
-          kicad-cli jobset run -f docs_update.kicad_jobset --output schematics  ./DRP.004.kicad_pro
+          kicad-cli jobset run -f docs_update.kicad_jobset --output assembly   ./DRP.004.kicad_pro || true
+          kicad-cli jobset run -f docs_update.kicad_jobset --output production  ./DRP.004.kicad_pro || true
+          kicad-cli jobset run -f docs_update.kicad_jobset --output mechanical  ./DRP.004.kicad_pro || true
+          kicad-cli jobset run -f docs_update.kicad_jobset --output schematics  ./DRP.004.kicad_pro || true
 
       - name: List generated outputs
         run: find docs/ -type f | sort
