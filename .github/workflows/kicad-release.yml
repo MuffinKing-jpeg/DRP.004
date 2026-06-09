@@ -11,15 +11,10 @@ jobs:
     container:
       image: kicad/kicad:10.0
       options: --user 1001
-      env:
-        HOME: /tmp/kicad-home
 
     steps:
-      - name: Prepare writable home for kicad user
-        run: |
-          whoami
-          id
-          mkdir -p /tmp/kicad-home
+      - name: Prepare home dir
+        run: mkdir -p /github/home/.config /github/home/.cache /github/home/.local
 
       - name: Checkout repository
         uses: actions/checkout@v4
