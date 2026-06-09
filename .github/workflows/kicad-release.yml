@@ -13,9 +13,8 @@ jobs:
       options: --user 1001
 
     steps:
-      - name: Prepare home dir and install tools
+      - name: Prepare tools
         run: |
-          mkdir -p /github/home/.config /github/home/.cache /github/home/.local
           apt-get update -qq && apt-get install -y --no-install-recommends zip
 
       - name: Checkout repository
