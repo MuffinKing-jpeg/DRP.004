@@ -8,21 +8,14 @@ on:
 jobs:
   export-and-release:
     runs-on: ubuntu-latest
+    container: kicad/kicad:10.0
 
     steps:
-      - name: Checkout repository with submodules
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          submodules: recursive   # pulls PARTS @ KiCAD-Parts pinned commit
 
-      - name: Install KiCad 10
-        run: |
-          sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
-          sudo apt-get update
-          sudo apt-get install --yes --no-install-recommends \
-            kicad xvfb \
-            libgl1-mesa-dri \
-            mesa-utils
+      - name: Checkout PARTS submodule
+        run: git submodule update --init --depth=1 PARTS
 
       - name: Extract PROJECT_REVISION from kicad_pro
         id: get_version
@@ -31,34 +24,24 @@ jobs:
           import json
           with open('DRP.004.kicad_pro') as f:
               data = json.load(f)
-          print(data['text_variables']['PROJECT_REVISION'])
+          print(data.get('text_variables', {}).get('PROJECT_REVISION', ''))
           ")
 
           if [ -z "$VERSION" ]; then
-            echo "ERROR: PROJECT_VERSION not found in text_variables"
+            echo "ERROR: PROJECT_REVISION not found in text_variables"
             exit 1
           fi
 
           echo "VERSION=$VERSION" >> "$GITHUB_OUTPUT"
-          echo "Resolved PROJECT_VERSION: $VERSION"
+          echo "Resolved PROJECT_REVISION: $VERSION"
 
-      - name: Start virtual display
+      - name: Run KiCad jobset
         run: |
-          sudo apt-get install --yes xvfb
-          Xvfb :99 -screen 0 1280x720x24 &
-          echo "DISPLAY=:99" >> "$GITHUB_ENV"
-
-      - name: Run KiCad jobset (skip 3D renders)
-        run: |
-          mkdir docs docs/mech docs/production docs/sch
-          xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" kicad-cli jobset run -f docs_update.kicad_jobset --output assembly ./DRP.004.kicad_pro
-          xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" kicad-cli jobset run -f docs_update.kicad_jobset --output production ./DRP.004.kicad_pro
-          xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" kicad-cli jobset run -f docs_update.kicad_jobset --output mechanical ./DRP.004.kicad_pro
-          xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" kicad-cli jobset run -f docs_update.kicad_jobset --output schematics ./DRP.004.kicad_pro
-        env:
-          DISPLAY: ":99"
-          LIBGL_ALWAYS_SOFTWARE: "1"
-          GALLIUM_DRIVER: llvmpipe
+          mkdir -p docs
+          kicad-cli jobset run -f docs_update.kicad_jobset --output assembly   ./DRP.004.kicad_pro
+          kicad-cli jobset run -f docs_update.kicad_jobset --output production  ./DRP.004.kicad_pro
+          kicad-cli jobset run -f docs_update.kicad_jobset --output mechanical  ./DRP.004.kicad_pro
+          kicad-cli jobset run -f docs_update.kicad_jobset --output schematics  ./DRP.004.kicad_pro
 
       - name: List generated outputs
         run: find docs/ -type f | sort
@@ -71,15 +54,13 @@ jobs:
           zip -r "$ZIP" docs/
           echo "ZIP=$ZIP"         >> "$GITHUB_ENV"
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
-      
+
       - name: Dump debug info on failure
         if: failure()
         run: |
-          echo "=== ENV ===" && env | sort
-          echo "=== PWD ===" && ls -la
-          echo "=== kicad_pro ===" && cat DRP.004.kicad_pro
-          echo "=== kicad-cli version ===" && kicad-cli --version
-          echo "=== dmesg (segfault) ===" && sudo dmesg | tail -30
+          kicad-cli version
+          cat DRP.004.kicad_pro
+          ls -la
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
