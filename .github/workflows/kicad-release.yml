@@ -40,11 +40,11 @@ jobs:
           echo "VERSION=$VERSION" >> "$GITHUB_OUTPUT"
           echo "Resolved PROJECT_REVISION: $VERSION"
 
-      - name: Fix /tmp permissions
-        run: chmod 1777 /tmp
-
       - name: Run KiCad jobset
+        env:
+          TMPDIR: /__w/DRP.004/DRP.004/.tmp
         run: |
+          mkdir -p /__w/DRP.004/DRP.004/.tmp
           mkdir -p docs
           kicad-cli jobset run -f docs_update.kicad_jobset --output assembly   ./DRP.004.kicad_pro || true
           kicad-cli jobset run -f docs_update.kicad_jobset --output production  ./DRP.004.kicad_pro || true
