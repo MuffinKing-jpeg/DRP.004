@@ -761,7 +761,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "SOLDERMAP_${PROJECTNAME}_${CURRENT_DATE}.pdf",
+      "plot": "GERBER_${PROJECTNAME}_${CURRENT_DATE}",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "DRP.004_mech_no_part.step",

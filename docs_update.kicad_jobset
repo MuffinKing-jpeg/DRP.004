@@ -308,6 +308,7 @@
           "F.Mask",
           "F.Paste",
           "F.SilkS",
+          "User.3",
           "Edge.Cuts"
         ],
         "layers_to_include_on_all_layers": [],
