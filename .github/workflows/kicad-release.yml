@@ -10,13 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: kicad/kicad:10.0
-      options: --user kicad
+      options: --user 1001
       env:
         HOME: /tmp/kicad-home
 
     steps:
       - name: Prepare writable home for kicad user
-        run: mkdir -p /tmp/kicad-home
+        run: |
+          whoami
+          id
+          mkdir -p /tmp/kicad-home
 
       - name: Checkout repository
         uses: actions/checkout@v4
