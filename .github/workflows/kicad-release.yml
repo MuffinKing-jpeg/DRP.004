@@ -13,9 +13,8 @@ jobs:
       options: --user 1001
 
     steps:
-      - name: Prepare tools
-        run: |
-          apt-get update -qq && apt-get install -y --no-install-recommends zip
+      - name: Prepare home dir
+        run: mkdir -p /github/home/.config /github/home/.cache /github/home/.local
 
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -60,7 +59,14 @@ jobs:
           VERSION="${{ steps.get_version.outputs.VERSION }}"
           TIMESTAMP=$(date -u +%Y%m%d_%H%M%S)
           ZIP="DOCS_DRP.004_${TIMESTAMP}.zip"
-          zip -r "$ZIP" docs/
+          python3 -c "
+          import zipfile, os
+          with zipfile.ZipFile('$ZIP', 'w', zipfile.ZIP_DEFLATED) as z:
+              for root, dirs, files in os.walk('docs'):
+                  for file in files:
+                      path = os.path.join(root, file)
+                      z.write(path)
+          "
           echo "ZIP=$ZIP"         >> "$GITHUB_ENV"
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
 
