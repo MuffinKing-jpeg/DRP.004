@@ -13,8 +13,10 @@ jobs:
       options: --user 1001
 
     steps:
-      - name: Prepare home dir
-        run: mkdir -p /github/home/.config /github/home/.cache /github/home/.local
+      - name: Prepare home dir and install tools
+        run: |
+          mkdir -p /github/home/.config /github/home/.cache /github/home/.local
+          apt-get update -qq && apt-get install -y --no-install-recommends zip
 
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -70,17 +72,17 @@ jobs:
           echo "=== PWD ===" && ls -la
           echo "=== kicad_pro ===" && cat DRP.004.kicad_pro
           echo "=== kicad-cli version ===" && kicad-cli --version
-          echo "=== dmesg (segfault) ===" && sudo dmesg | tail -30
+          echo "=== dmesg (segfault) ===" && dmesg | tail -30
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: "v${{ env.VERSION }}"
-          name: "DRP.004 v${{ env.VERSION }}"
+          tag_name: "v${{ steps.get_version.outputs.VERSION  }}"
+          name: "DRP.004 v${{ steps.get_version.outputs.VERSION  }}"
           body: |
             Automated KiCad export — commit ${{ github.sha }}
 
-            **Version:** `${{ env.VERSION }}`
+            **Version:** `${{ steps.get_version.outputs.VERSION  }}`
             **Branch:** `${{ github.ref_name }}`
           files: ${{ env.ZIP }}
           make_latest: true
