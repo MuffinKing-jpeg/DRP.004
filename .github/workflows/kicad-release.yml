@@ -39,6 +39,12 @@ jobs:
           echo "VERSION=$VERSION" >> "$GITHUB_OUTPUT"
           echo "Resolved PROJECT_VERSION: $VERSION"
 
+      - name: Start virtual display
+        run: |
+          sudo apt-get install --yes xvfb
+          Xvfb :99 -screen 0 1280x720x24 &
+          echo "DISPLAY=:99" >> "$GITHUB_ENV"
+
       - name: Run KiCad jobset (skip 3D renders)
         run: |
           mkdir docs docs/mech docs/production docs/sch
@@ -58,6 +64,15 @@ jobs:
           zip -r "$ZIP" docs/
           echo "ZIP=$ZIP"         >> "$GITHUB_ENV"
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+      
+      - name: Dump debug info on failure
+        if: failure()
+        run: |
+          echo "=== ENV ===" && env | sort
+          echo "=== PWD ===" && ls -la
+          echo "=== kicad_pro ===" && cat DRP.004.kicad_pro
+          echo "=== kicad-cli version ===" && kicad-cli --version
+          echo "=== dmesg (segfault) ===" && sudo dmesg | tail -30
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
