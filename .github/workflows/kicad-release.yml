@@ -8,9 +8,16 @@ on:
 jobs:
   export-and-release:
     runs-on: ubuntu-latest
-    container: kicad/kicad:10.0
+    container:
+      image: kicad/kicad:10.0
+      options: --user kicad
+      env:
+        HOME: /tmp/kicad-home
 
     steps:
+      - name: Prepare writable home for kicad user
+        run: mkdir -p /tmp/kicad-home
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
