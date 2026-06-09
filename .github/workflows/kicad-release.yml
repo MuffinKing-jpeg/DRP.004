@@ -9,7 +9,7 @@ jobs:
   export-and-release:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/kicad/kicad:10.0
+      image: kicad/kicad:10.0
       options: --user 1001
 
     steps:
@@ -45,7 +45,7 @@ jobs:
           TMPDIR: /__w/DRP.004/DRP.004/.tmp
         run: |
           mkdir -p /__w/DRP.004/DRP.004/.tmp
-          mkdir -p docs
+          mkdir docs docs/mech docs/production docs/sch
           kicad-cli jobset run -f docs_update.kicad_jobset --output assembly   ./DRP.004.kicad_pro || true
           kicad-cli jobset run -f docs_update.kicad_jobset --output production  ./DRP.004.kicad_pro || true
           kicad-cli jobset run -f docs_update.kicad_jobset --output mechanical  ./DRP.004.kicad_pro || true
@@ -66,9 +66,11 @@ jobs:
       - name: Dump debug info on failure
         if: failure()
         run: |
-          kicad-cli version
-          cat DRP.004.kicad_pro
-          ls -la
+          echo "=== ENV ===" && env | sort
+          echo "=== PWD ===" && ls -la
+          echo "=== kicad_pro ===" && cat DRP.004.kicad_pro
+          echo "=== kicad-cli version ===" && kicad-cli --version
+          echo "=== dmesg (segfault) ===" && sudo dmesg | tail -30
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
