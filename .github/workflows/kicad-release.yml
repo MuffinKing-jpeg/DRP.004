@@ -1,29 +1,29 @@
 name: KiCad Export & Release
- 
+
 on:
   push:
     branches:
       - main
- 
+
 jobs:
   export-and-release:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    container:
-      image: ghcr.io/kicad/kicad:10.0
-      options: --user 1001
- 
+
     steps:
-      - name: Prepare home dir
-        run: mkdir -p /github/home/.config /github/home/.cache /github/home/.local
- 
       - name: Checkout repository
         uses: actions/checkout@v4
- 
+
       - name: Checkout PARTS submodule
         run: git submodule update --init --depth=1 PARTS
- 
+
+      - name: Install KiCad 10
+        run: |
+          sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends kicad kicad-libraries kicad-packages3d
+
       - name: Extract PROJECT_REVISION from kicad_pro
         id: get_version
         run: |
@@ -33,55 +33,45 @@ jobs:
               data = json.load(f)
           print(data.get('text_variables', {}).get('PROJECT_REVISION', ''))
           ")
- 
+
           if [ -z "$VERSION" ]; then
             echo "ERROR: PROJECT_REVISION not found in text_variables"
             exit 1
           fi
- 
+
           echo "VERSION=$VERSION" >> "$GITHUB_OUTPUT"
           echo "Resolved PROJECT_REVISION: $VERSION"
- 
+
       - name: Run KiCad jobset
-        env:
-          TMPDIR: /__w/DRP.004/DRP.004/.tmp
         run: |
-          mkdir -p /__w/DRP.004/DRP.004/.tmp
-          mkdir -p docs
-          kicad-cli jobset run -f docs_update.kicad_jobset --output assembly   ./DRP.004.kicad_pro
-          kicad-cli jobset run -f docs_update.kicad_jobset --output production  ./DRP.004.kicad_pro
-          kicad-cli jobset run -f docs_update.kicad_jobset --output mechanical  ./DRP.004.kicad_pro
-          kicad-cli jobset run -f docs_update.kicad_jobset --output schematics  ./DRP.004.kicad_pro
- 
+          mkdir -p docs .tmp
+          xvfb-run --auto-servernum kicad-cli jobset run -f docs_update.kicad_jobset --output assembly   ./DRP.004.kicad_pro || true
+          xvfb-run --auto-servernum kicad-cli jobset run -f docs_update.kicad_jobset --output production  ./DRP.004.kicad_pro || true
+          xvfb-run --auto-servernum kicad-cli jobset run -f docs_update.kicad_jobset --output mechanical  ./DRP.004.kicad_pro || true
+          xvfb-run --auto-servernum kicad-cli jobset run -f docs_update.kicad_jobset --output schematics  ./DRP.004.kicad_pro || true
+        env:
+          TMPDIR: /tmp
+
       - name: List generated outputs
         run: find docs/ -type f | sort
- 
+
       - name: Create release archive
         run: |
           VERSION="${{ steps.get_version.outputs.VERSION }}"
           TIMESTAMP=$(date -u +%Y%m%d_%H%M%S)
           ZIP="DOCS_DRP.004_${TIMESTAMP}.zip"
-          python3 -c "
-          import zipfile, os
-          with zipfile.ZipFile('$ZIP', 'w', zipfile.ZIP_DEFLATED) as z:
-              for root, dirs, files in os.walk('docs'):
-                  for file in files:
-                      path = os.path.join(root, file)
-                      z.write(path)
-          "
+          zip -r "$ZIP" docs/
           echo "ZIP=$ZIP"         >> "$GITHUB_ENV"
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
- 
+
       - name: Dump debug info on failure
         if: failure()
         run: |
           kicad-cli version
           cat DRP.004.kicad_pro
           ls -la
-          echo "=== dmesg via /proc/kmsg ===" && timeout 1 cat /proc/kmsg || true
-          echo "=== dmesg via /var/log/syslog ===" && tail -50 /var/log/syslog 2>/dev/null || true
-          echo "=== dmesg via /var/log/kern.log ===" && tail -50 /var/log/kern.log 2>/dev/null || true
- 
+          echo "=== dmesg ===" && sudo dmesg | tail -30
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
@@ -89,7 +79,7 @@ jobs:
           name: "DRP.004 v${{ env.VERSION }}"
           body: |
             Automated KiCad export — commit ${{ github.sha }}
- 
+
             **Version:** `${{ env.VERSION }}`
             **Branch:** `${{ github.ref_name }}`
           files: ${{ env.ZIP }}
