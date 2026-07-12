@@ -1,27 +1,29 @@
 name: KiCad Export & Release
-
+ 
 on:
   push:
     branches:
       - main
-
+ 
 jobs:
   export-and-release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     container:
       image: ghcr.io/kicad/kicad:10.0
       options: --user 1001
-
+ 
     steps:
       - name: Prepare home dir
         run: mkdir -p /github/home/.config /github/home/.cache /github/home/.local
-
+ 
       - name: Checkout repository
         uses: actions/checkout@v4
-
+ 
       - name: Checkout PARTS submodule
         run: git submodule update --init --depth=1 PARTS
-
+ 
       - name: Extract PROJECT_REVISION from kicad_pro
         id: get_version
         run: |
@@ -31,29 +33,29 @@ jobs:
               data = json.load(f)
           print(data.get('text_variables', {}).get('PROJECT_REVISION', ''))
           ")
-
+ 
           if [ -z "$VERSION" ]; then
             echo "ERROR: PROJECT_REVISION not found in text_variables"
             exit 1
           fi
-
+ 
           echo "VERSION=$VERSION" >> "$GITHUB_OUTPUT"
           echo "Resolved PROJECT_REVISION: $VERSION"
-
+ 
       - name: Run KiCad jobset
         env:
           TMPDIR: /__w/DRP.004/DRP.004/.tmp
         run: |
           mkdir -p /__w/DRP.004/DRP.004/.tmp
-          mkdir docs docs/mech docs/production docs/sch
-          kicad-cli jobset run -f docs_update.kicad_jobset --output mechanical  ./DRP.004.kicad_pro
-          kicad-cli jobset run -f docs_update.kicad_jobset --output schematics  ./DRP.004.kicad_pro
+          mkdir -p docs
           kicad-cli jobset run -f docs_update.kicad_jobset --output assembly   ./DRP.004.kicad_pro
           kicad-cli jobset run -f docs_update.kicad_jobset --output production  ./DRP.004.kicad_pro
-
+          kicad-cli jobset run -f docs_update.kicad_jobset --output mechanical  ./DRP.004.kicad_pro
+          kicad-cli jobset run -f docs_update.kicad_jobset --output schematics  ./DRP.004.kicad_pro
+ 
       - name: List generated outputs
         run: find docs/ -type f | sort
-
+ 
       - name: Create release archive
         run: |
           VERSION="${{ steps.get_version.outputs.VERSION }}"
@@ -69,25 +71,26 @@ jobs:
           "
           echo "ZIP=$ZIP"         >> "$GITHUB_ENV"
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
-
+ 
       - name: Dump debug info on failure
         if: failure()
         run: |
-          echo "=== ENV ===" && env | sort
-          echo "=== PWD ===" && ls -la
-          echo "=== kicad_pro ===" && cat DRP.004.kicad_pro
-          echo "=== kicad-cli version ===" && kicad-cli --version
-          echo "=== dmesg (segfault) ===" && dmesg | tail -30
-
+          kicad-cli version
+          cat DRP.004.kicad_pro
+          ls -la
+          echo "=== dmesg via /proc/kmsg ===" && timeout 1 cat /proc/kmsg || true
+          echo "=== dmesg via /var/log/syslog ===" && tail -50 /var/log/syslog 2>/dev/null || true
+          echo "=== dmesg via /var/log/kern.log ===" && tail -50 /var/log/kern.log 2>/dev/null || true
+ 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: "v${{ steps.get_version.outputs.VERSION  }}"
-          name: "DRP.004 v${{ steps.get_version.outputs.VERSION  }}"
+          tag_name: "v${{ env.VERSION }}"
+          name: "DRP.004 v${{ env.VERSION }}"
           body: |
             Automated KiCad export — commit ${{ github.sha }}
-
-            **Version:** `${{ steps.get_version.outputs.VERSION  }}`
+ 
+            **Version:** `${{ env.VERSION }}`
             **Branch:** `${{ github.ref_name }}`
           files: ${{ env.ZIP }}
           make_latest: true
