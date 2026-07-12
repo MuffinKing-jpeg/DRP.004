@@ -32,7 +32,7 @@
           0.0
         ],
         "output_filename": "top.png",
-        "pan_x": 3.0,
+        "pan_x": 0.0,
         "pan_y": 0.0,
         "pan_z": 0.0,
         "perspective": false,
@@ -86,7 +86,7 @@
           0.0
         ],
         "output_filename": "bot.png",
-        "pan_x": -3.0,
+        "pan_x": 0.0,
         "pan_y": 0.0,
         "pan_z": 0.0,
         "perspective": false,
@@ -140,8 +140,8 @@
           0.0
         ],
         "output_filename": "overview.png",
-        "pan_x": 4.0,
-        "pan_y": 0.0,
+        "pan_x": 0.0,
+        "pan_y": 1.0,
         "pan_z": 0.0,
         "perspective": true,
         "pivot_x": 0.0,
@@ -158,7 +158,7 @@
         "use_board_stackup_colors": true,
         "variant": "",
         "width": 1920,
-        "zoom": 1.0
+        "zoom": 1.2
       },
       "type": "pcb_render"
     },

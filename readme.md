@@ -1,7 +1,7 @@
 # DRP.004
 
 Quack with the **new level**!
-![bottom image](/Images/DRP.004_overview.png)
+![bottom image](/Images/overview.png)
 
 ## Docs
 
@@ -32,6 +32,11 @@ Quack with the **new level**!
 - Removed power-on by button
 - Squished PCB to 27*42mm size  
 - Fresh docs
+
+## Changes in v4.4
+
+- CI/CD
+- TPS61022 -> TPS63020
 
 ## Issues to overcome
 
