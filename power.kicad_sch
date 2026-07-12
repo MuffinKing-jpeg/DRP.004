@@ -7,7 +7,7 @@
 	(title_block
 		(title "DRP.004")
 		(date "2025-04-05")
-		(rev "v4.3")
+		(rev "v${PROJECT_REVISION}")
 		(company "SaintCarbonara")
 		(comment 1 "QUACK-QUACK, MAFAKA!")
 		(comment 2 "QUACK-QUACK, MAFAKA!")

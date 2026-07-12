@@ -14,7 +14,7 @@
         "copper_text_size_h": 1.5,
         "copper_text_size_v": 1.5,
         "copper_text_thickness": 0.3,
-        "copper_text_upright": false,
+        "copper_text_upright": true,
         "courtyard_line_width": 0.05,
         "dimension_precision": 2,
         "dimension_units": 3,
@@ -31,13 +31,13 @@
         "fab_text_size_h": 0.7,
         "fab_text_size_v": 0.7,
         "fab_text_thickness": 0.1,
-        "fab_text_upright": false,
+        "fab_text_upright": true,
         "other_line_width": 0.1,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
         "other_text_thickness": 0.15,
-        "other_text_upright": false,
+        "other_text_upright": true,
         "pads": {
           "drill": 4.0,
           "height": 5.0,
@@ -52,17 +52,17 @@
         "zones": {
           "border_display_style": 2,
           "border_hatch_pitch": 0.5,
-          "corner_radius": 0.5,
+          "corner_radius": 1.0,
           "corner_smoothing": 2,
-          "fill_mode": 0,
+          "fill_mode": 1,
           "hatch_gap": 1.5,
-          "hatch_orientation": 0.0,
+          "hatch_orientation": 45.0,
           "hatch_smoothing_level": 0,
-          "hatch_smoothing_value": 0.1,
-          "hatch_thickness": 1.0,
-          "min_clearance": 0.25,
+          "hatch_smoothing_value": 0.3,
+          "hatch_thickness": 0.5,
+          "min_clearance": 0.3,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
+          "min_thickness": 0.3,
           "pad_connection": 3,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
@@ -262,7 +262,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "v4.3"
+      "sch_revision": "v${PROJECT_REVISION}"
     },
     "layer_pairs": [
       {
@@ -970,7 +970,7 @@
     ]
   ],
   "text_variables": {
-    "PROJECT_REVISION": "4.4"
+    "PROJECT_REVISION": "4.4.1"
   },
   "tuning_profiles": {
     "meta": {
