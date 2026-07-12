@@ -52,8 +52,8 @@
         "zones": {
           "border_display_style": 2,
           "border_hatch_pitch": 0.5,
-          "corner_radius": 0.0,
-          "corner_smoothing": 0,
+          "corner_radius": 0.5,
+          "corner_smoothing": 2,
           "fill_mode": 0,
           "hatch_gap": 1.5,
           "hatch_orientation": 0.0,
@@ -63,7 +63,7 @@
           "min_clearance": 0.25,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
+          "pad_connection": 3,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -834,7 +834,7 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Color",
           "name": "Color",
           "show": true
@@ -893,7 +893,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": ""
+      "sort_field": "Reference"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -952,7 +952,7 @@
         "uuid": "990f0ec4-1b5b-4db8-8f39-ecd88fffeea0"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR29,#PWR32,#PWR56,#PWR59,C15",
     "variants": []
   },
   "sheets": [
@@ -970,7 +970,7 @@
     ]
   ],
   "text_variables": {
-    "PROJECT_REVISION": "4.3.0"
+    "PROJECT_REVISION": "4.4"
   },
   "tuning_profiles": {
     "meta": {
